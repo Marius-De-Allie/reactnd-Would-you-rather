@@ -9,3 +9,5 @@ const logger = (store) => (next) => (action) => {
     console.groupEnd();
     return returnedValue;
 };
+
+export default logger;
