@@ -1,6 +1,6 @@
 'use strict';
 
-// Users reducer, has questions has default state of an empty object {}.
+// Users reducer, has default state of an empty object {}.
 const users = (state = {}, action) => {
     switch(action.type) {
         default:
