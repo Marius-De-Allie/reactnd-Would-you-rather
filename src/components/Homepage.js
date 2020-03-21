@@ -20,4 +20,4 @@ const mapStateToProps = (state) => ({
 }); 
 
 // Turn Homepage into a container component connecting it to the redux store via connect().
-export default connect()(Homepage);
+export default connect(mapStateToProps, mapDispatchToProps)(Homepage);
