@@ -18,3 +18,6 @@ const mapStateToProps = (state) => ({
     users: state.users,
     authedUser: state.authedUser
 }); 
+
+// Turn Homepage into a container component connecting it to the redux store via connect().
+export default connect()(Homepage);
