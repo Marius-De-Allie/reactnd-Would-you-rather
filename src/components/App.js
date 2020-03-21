@@ -12,7 +12,6 @@ class App extends React.Component {
   }
 };
 
-
 // Which state from the redux store will be passed to his component as props.
 const mapStateToProps = (state) => ({
   questions: state.questions,
@@ -20,4 +19,4 @@ const mapStateToProps = (state) => ({
   authedUser: state.authedUser
 });
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);
