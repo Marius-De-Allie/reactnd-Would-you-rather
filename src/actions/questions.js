@@ -5,3 +5,5 @@ const receiveQuestions = (questions) => ({
     type: RECEIVE_QUESTIONS,
     questions
 });
+
+export {RECEIVE_QUESTIONS, receiveQuestions};
