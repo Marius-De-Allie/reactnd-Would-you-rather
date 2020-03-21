@@ -12,5 +12,9 @@ import middleware from './middleware';
 // CREATE REDUX STORE.
 const store = createStore(reducer, middleware);
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <Provider>
+        <App />
+    </Provider>, 
+    document.getElementById('root'));
 
