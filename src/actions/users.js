@@ -6,3 +6,5 @@ const receiveUsers = (users) => ({
     users
 });
 
+export {RECEIVE_USERS, receiveUsers};
+
