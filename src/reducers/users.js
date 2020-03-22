@@ -4,6 +4,8 @@ import { RECEIVE_USERS } from '../actions/users';
 // Users reducer, has default state of an empty object {}.
 const users = (state = {}, action) => {
     switch(action.type) {
+        case RECEIVE_USERS:
+            return {...state, ...action.users}
         default:
             return state;
     }
