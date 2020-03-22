@@ -7,6 +7,10 @@ import { handleReceiveQuestions } from '../actions/questions';
 import { handleReceiveUsers } from '../actions/users';
 
 class App extends React.Component {
+  componentDidMount() {
+    this.props.dispatch(handleReceiveUsers());
+    this.props.dispatch(handleReceiveQuestions());
+  }
   render() {
     return (
       <div className="App">
