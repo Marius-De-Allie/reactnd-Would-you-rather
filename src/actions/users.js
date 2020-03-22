@@ -19,5 +19,5 @@ const handleReceiveUsers = () => {
     }
 };
 
-export {RECEIVE_USERS, receiveUsers};
+export {RECEIVE_USERS};
 
