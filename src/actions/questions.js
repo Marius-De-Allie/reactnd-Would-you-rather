@@ -12,7 +12,7 @@ const receiveQuestions = (questions) => ({
 const handleReceiveQuestions = () => {
     return (dispatch) => {
         // Request all questions from database.
-        _getQuestions()
+        return _getQuestions()
         // dispatch receivequestions action with result from _getQuestions async request.
         .then((questions) => {
             console.log(questions);
