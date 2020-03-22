@@ -1,8 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import '../App.css';
-// Import handleReceiveQuestiosn thunk action creator.
+// Import handleReceiveQuestions thunk action creator.
 import { handleReceiveQuestions } from '../actions/questions';
+// Import handleReceiveUsers thunk action creator.
+import { handleReceiveUsers } from '../actions/users';
 
 class App extends React.Component {
   render() {
