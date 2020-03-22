@@ -21,4 +21,4 @@ const handleReceiveQuestions = () => {
     }
 };
 
-export {RECEIVE_QUESTIONS, receiveQuestions}; 
+export {RECEIVE_QUESTIONS}; 
