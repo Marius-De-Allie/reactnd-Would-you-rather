@@ -1,6 +1,6 @@
 'use strict';
 // Import getQuestions async API function.
-import _getQuestions from '../../_DATA';
+import { _getQuestions } from '../_DATA';
 const RECEIVE_QUESTIONS = 'RECEIVE_QUESTIONS';
 
 const receiveQuestions = (questions) => ({
