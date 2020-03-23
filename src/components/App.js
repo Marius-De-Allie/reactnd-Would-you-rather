@@ -7,6 +7,8 @@ import { handleReceiveQuestions } from '../actions/questions';
 // Import handleReceiveUsers thunk action creator.
 import { handleReceiveUsers } from '../actions/users';
 import Homepage from './Homepage';
+// Import 404 page component.
+import NotfoundPage from './NotfoundPage';
 
 class App extends React.Component {
   componentDidMount() {
