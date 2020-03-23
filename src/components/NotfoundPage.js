@@ -7,3 +7,5 @@ const NotfoundPage = () => (
         <p>Return<Link to="/">Home</Link></p>
     </div>
 );
+
+export default NotfoundPage;
