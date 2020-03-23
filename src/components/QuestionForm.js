@@ -18,3 +18,6 @@ class QuestionForm extends Component {
     }
 };
 
+const MapStateToProps = (state) => ({
+    questions: state.questions
+});
