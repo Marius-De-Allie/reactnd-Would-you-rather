@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Switch, Route } from 'react-router-dom';
 import '../App.css';
 // Import handleReceiveQuestions thunk action creator.
 import { handleReceiveQuestions } from '../actions/questions';
