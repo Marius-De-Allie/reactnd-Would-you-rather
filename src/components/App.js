@@ -20,6 +20,7 @@ class App extends React.Component {
           <Route path="/" exact  component={Homepage} />
           <Route path="/questions/:question_id" />
           <Route path="/add" />
+          <Route path="/leaderboard" />
         </Switch>
       </div>
     );
