@@ -17,6 +17,7 @@ class App extends React.Component {
       <div className="App">
         App Component
         <Switch>
+          <Route path="/" />
         </Switch>
       </div>
     );
