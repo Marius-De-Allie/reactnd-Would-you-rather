@@ -21,3 +21,5 @@ class QuestionForm extends Component {
 const MapStateToProps = (state) => ({
     questions: state.questions
 });
+
+export default connect(MapStateToProps)(QuestionForm);
