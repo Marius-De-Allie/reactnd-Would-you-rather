@@ -6,6 +6,7 @@ import '../App.css';
 import { handleReceiveQuestions } from '../actions/questions';
 // Import handleReceiveUsers thunk action creator.
 import { handleReceiveUsers } from '../actions/users';
+import Homepage from './Homepage';
 
 class App extends React.Component {
   componentDidMount() {
