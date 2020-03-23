@@ -23,6 +23,7 @@ class App extends React.Component {
           <Route path="/questions/:question_id" />
           <Route path="/add" />
           <Route path="/leaderboard" />
+          <Route component={NotfoundPage} />
         </Switch>
       </div>
     );
