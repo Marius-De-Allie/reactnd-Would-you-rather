@@ -7,7 +7,7 @@ class Homepage extends Component {
     render() {
         return (
             <div>
-                Home Page
+                <QuestionForm />
             </div>
         );
     }
@@ -21,4 +21,4 @@ const mapStateToProps = (state) => ({
 }); 
 
 // Turn Homepage into a container component connecting it to the redux store via connect().
-export default connect(mapStateToProps, mapDispatchToProps)(Homepage);
+export default connect(mapStateToProps)(Homepage);
