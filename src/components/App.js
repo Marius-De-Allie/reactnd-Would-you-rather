@@ -16,6 +16,8 @@ class App extends React.Component {
     return (
       <div className="App">
         App Component
+        <Switch>
+        </Switch>
       </div>
     );
   }
