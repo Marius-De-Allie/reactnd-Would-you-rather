@@ -15,3 +15,9 @@ const QuestionItem = () => (
     </div>
 );
 
+const mapStateToProps = ({questions, users, authedUser}) => ({
+    questions,
+    users,
+    authedUser
+});
+
