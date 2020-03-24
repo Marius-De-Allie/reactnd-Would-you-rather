@@ -21,3 +21,5 @@ const mapStateToProps = ({questions, users, authedUser}) => ({
     authedUser
 });
 
+export default connect(mapStateToProps)(QuestionItem);
+
