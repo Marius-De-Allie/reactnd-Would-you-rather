@@ -2,9 +2,15 @@ import React from 'react';
 
 const UnansweredList = () => (
     <div>
-        <h2>Unanswered Questions</h2>
+        <button><h2>Unanswered Questions</h2></button>
         <ul>
             Question Items
         </ul>
     </div>
 );
+
+const mapStateToProps = (state) => ({
+    questions: state.questions,
+    users: state.users,
+    authedUser: state.authedUser
+});
