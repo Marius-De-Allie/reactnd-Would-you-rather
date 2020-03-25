@@ -13,7 +13,7 @@ class Homepage extends Component {
     }
 };
 
-// Which state from the redux store will be passed to his component as props.
+// Which state from the redux store will be passed to this component as props.
 const mapStateToProps = (state) => ({
     questionIds: Object.keys(state.questions),
     users: state.users,

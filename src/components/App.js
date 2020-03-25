@@ -6,6 +6,7 @@ import '../App.css';
 import { handleReceiveQuestions } from '../actions/questions';
 // Import handleReceiveUsers thunk action creator.
 import { handleReceiveUsers } from '../actions/users';
+import { setAuthedUser } from '../actions/authedUser';
 import Homepage from './Homepage';
 // Import 404 page component.
 import NotfoundPage from './NotfoundPage';
@@ -14,6 +15,7 @@ class App extends React.Component {
   componentDidMount() {
     this.props.dispatch(handleReceiveUsers());
     this.props.dispatch(handleReceiveQuestions());
+    this.props.dispatch(setAuthedUser('sarahedo'));
   }
   render() {
     return (
