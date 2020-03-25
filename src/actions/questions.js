@@ -15,7 +15,7 @@ const handleReceiveQuestions = () => {
         return _getQuestions()
         // dispatch receivequestions action with result from _getQuestions async request.
         .then((questions) => {
-            console.log(questions);
+            // console.log(questions);
             dispatch(receiveQuestions(questions))
         })
     }
