@@ -15,3 +15,5 @@ const mapStateToProps = (state) => ({
     users: state.users,
     authedUser: state.authedUser
 });
+
+export default connect(mapStateToProps)(UnansweredList);
