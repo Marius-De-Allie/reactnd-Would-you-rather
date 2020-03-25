@@ -1,13 +1,14 @@
 'use strict';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import QuestionForm from './QuestionForm';
+import UnansweredList from './UnansweredList';
 
 class Homepage extends Component {
     render() {
+        // console.log(this.props);
         return (
             <div>
-                <QuestionForm />
+                <UnansweredList />
             </div>
         );
     }
