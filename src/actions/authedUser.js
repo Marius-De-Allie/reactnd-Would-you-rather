@@ -5,4 +5,4 @@ const setAuthedUser = (id) => ({
     id
 });
 
-export default setAuthedUser;
+export {SET_AUTHED_USER, setAuthedUser};
