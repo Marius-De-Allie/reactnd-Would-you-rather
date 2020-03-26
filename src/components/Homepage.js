@@ -17,7 +17,7 @@ class Homepage extends Component {
     render() {
         return (
             <div>
-            <NavLink className="questions-btn" to="/">
+            <NavLink className="questions-btn" to="/" onClick={this.onUnansweredClick}>
                 Un-answered Questions
             </NavLink>
             <NavLink className="questions-btn" to="/">
