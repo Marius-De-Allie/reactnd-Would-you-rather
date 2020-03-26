@@ -8,10 +8,9 @@ class Homepage extends Component {
         showAnswered: false
     };
     render() {
-        // console.log(this.props);
         return (
             <div>
-                <UnansweredList />
+                {this.state.showAnswered ? <AnsweredList /> : <UnansweredList />}
             </div>
         );
     }
