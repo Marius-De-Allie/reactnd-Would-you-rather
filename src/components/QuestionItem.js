@@ -17,9 +17,11 @@ const QuestionItem = () => (
 
 const mapStateToProps = ({questions, users, authedUser}, {id}) => {
     const question = questions[id];
+    const author = users[question.author];
 
     return {
         question,
+        author,
         questions,
         users,
         authedUser
