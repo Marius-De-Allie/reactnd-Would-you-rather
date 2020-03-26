@@ -36,7 +36,8 @@ class App extends React.Component {
 const mapStateToProps = (state) => ({
   questions: state.questions,
   users: state.users,
-  authedUser: state.authedUser
+  authedUser: state.authedUser,
+  loading: state.authedUser === null
 });
 
 export default connect(mapStateToProps)(App);
