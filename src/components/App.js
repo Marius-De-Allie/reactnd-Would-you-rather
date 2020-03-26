@@ -10,6 +10,7 @@ import { setAuthedUser } from '../actions/authedUser';
 import Homepage from './Homepage';
 // Import 404 page component.
 import NotfoundPage from './NotfoundPage';
+import QuestionForm from './QuestionForm';
 
 class App extends React.Component {
   componentDidMount() {
@@ -22,7 +23,7 @@ class App extends React.Component {
       <div className="App">
         <Switch>
           <Route path="/" exact  component={!this.props.loading && Homepage} />
-          <Route path="/questions/:question_id" />
+          <Route path="/questions/:question_id" component={QuestionForm} />
           <Route path="/add" />
           <Route path="/leaderboard" />
           <Route component={NotfoundPage} />
