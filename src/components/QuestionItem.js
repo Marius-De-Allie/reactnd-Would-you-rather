@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const QuestionItem = () => (
+const QuestionItem = (props) => (
     <div>
-        <h3>Author's Name asks:</h3>
+        <h3>{props.author.name} asks:</h3>
         <div>
             <div>Avatar Image</div>{/*Convert to img element*/}
             <div className="question-content">
