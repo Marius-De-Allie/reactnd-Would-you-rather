@@ -1,5 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import {withRouter } from 'react-router-dom';
 
 const QuestionItem = (props) => {
     const onPollBtnClick = (evt, questionId) => {
@@ -15,11 +17,9 @@ const QuestionItem = (props) => {
                 <div className="question-content">
                     <h3>Would you Rather</h3>
                     <p>...{[props.question.optionOne.text]}...</p>
-                    <button onClick={(evt) => {
-                        onPollBtnClick(evt, props.question.id)
-                    }}>
+                    <Link to={`questions/${props.question.id}`}>
                         View Poll
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>
@@ -40,5 +40,5 @@ const mapStateToProps = ({questions, users, authedUser}, {id}) => {
     }
 };
 
-export default connect(mapStateToProps)(QuestionItem);
+export default withRouter(connect(mapStateToProps)(QuestionItem));
 
