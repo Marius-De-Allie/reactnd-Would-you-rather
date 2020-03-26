@@ -12,9 +12,6 @@ class Homepage extends Component {
     render() {
         return (
             <div>
-            {this.state.showAnswered ? (<div><button className="btn"><h2>Unanswered Questions</h2></button> <button className="btn" disabled style={{color: 'white', backgroundColor: 'red'}}><h2>Answered Questions</h2></button></div>) : 
-            (<div><button className="btn" disabled style={{color: 'white', backgroundColor: 'red'}}><h2>Unanswered Questions</h2></button> <button className="btn"><h2>Answered Questions</h2></button></div>)}
-            {this.state.showAnswered ? <AnsweredList /> : <UnansweredList />}
                 {this.state.showAnswered ? <AnsweredList /> : <UnansweredList />}
             </div>
         );
