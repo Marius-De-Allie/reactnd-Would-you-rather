@@ -10,7 +10,7 @@ const UnansweredList = (props) => {
             <ul>
                 {props.UnansweredIds.map(id => (
                     <li key={id}>
-                        <QuestionsItem />
+                        <QuestionsItem id={id}/>
                     </li>
                 ))}
             </ul>
