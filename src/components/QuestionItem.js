@@ -15,11 +15,16 @@ const QuestionItem = () => (
     </div>
 );
 
-const mapStateToProps = ({questions, users, authedUser}, {id}) => ({
-    questions,
-    users,
-    authedUser
-});
+const mapStateToProps = ({questions, users, authedUser}, {id}) => {
+    const question = questions[id];
+
+    return {
+        question,
+        questions,
+        users,
+        authedUser
+    }
+};
 
 export default connect(mapStateToProps)(QuestionItem);
 
