@@ -9,6 +9,11 @@ class Homepage extends Component {
     state = {
         showAnswered: false
     };
+    onUnansweredClick = (e) => {
+        this.setState(() => ({
+            showAnswered: false
+        }));
+    };
     render() {
         return (
             <div>
