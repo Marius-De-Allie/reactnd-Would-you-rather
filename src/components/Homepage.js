@@ -4,6 +4,9 @@ import { connect } from 'react-redux';
 import UnansweredList from './UnansweredList';
 
 class Homepage extends Component {
+    state = {
+        showAnswered: false
+    };
     render() {
         // console.log(this.props);
         return (
