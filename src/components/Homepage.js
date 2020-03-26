@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import UnansweredList from './UnansweredList';
+import AnsweredList from './AnsweredList';
 
 class Homepage extends Component {
     state = {

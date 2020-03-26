@@ -6,7 +6,6 @@ const UnansweredList = (props) => {
     console.log(props);
     return (
         <div>
-            <button><h2>Unanswered Questions</h2></button>
             <ul>
                 {props.UnansweredIds.map(id => (
                     <li key={id}>

@@ -4,7 +4,6 @@ import QuestionsItem from './QuestionItem';
 
 const AnsweredList = (props) => (
     <div>
-        <button><h2>Answered Questions</h2></button>
         <ul>
             {props.answeredIds.map(id => (
                 <li key={id}>
