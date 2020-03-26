@@ -12,6 +12,12 @@ class Homepage extends Component {
     render() {
         return (
             <div>
+            <NavLink className="questions-btn" to="/">
+                Un-answered Questions
+            </NavLink>
+            <NavLink className="questions-btn" to="/">
+                Answered Questions
+            </NavLink>
                 {this.state.showAnswered ? <AnsweredList /> : <UnansweredList />}
             </div>
         );
