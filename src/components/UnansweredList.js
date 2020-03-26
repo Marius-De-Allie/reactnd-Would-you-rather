@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import QuestionsuestionItem from './QuestionItem';
+import QuestionsItem from './QuestionItem';
 
 const UnansweredList = (props) => {
     console.log(props);
@@ -8,7 +8,11 @@ const UnansweredList = (props) => {
         <div>
             <button><h2>Unanswered Questions</h2></button>
             <ul>
-                
+                {props.UnansweredIds.map(id => (
+                    <li key={id}>
+                        <QuestionsItem />
+                    </li>
+                ))}
             </ul>
         </div>
     )
