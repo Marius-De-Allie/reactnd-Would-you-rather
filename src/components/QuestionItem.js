@@ -4,7 +4,8 @@ import { connect } from 'react-redux';
 const QuestionItem = (props) => {
     const onPollBtnClick = (evt, questionId) => {
         evt.preventDefault();
-        
+        console.log('questionId', questionId);
+
     };
     return (
         <div>
@@ -14,7 +15,11 @@ const QuestionItem = (props) => {
                 <div className="question-content">
                     <h3>Would you Rather</h3>
                     <p>...{[props.question.optionOne.text]}...</p>
-                    <button>View Poll</button>
+                    <button onClick={(evt) => {
+                        onPollBtnClick(evt, props.question.id)
+                    }}>
+                        View Poll
+                    </button>
                 </div>
             </div>
         </div>
