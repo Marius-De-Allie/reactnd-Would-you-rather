@@ -1,6 +1,7 @@
 'use strict';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import UnansweredList from './UnansweredList';
 import AnsweredList from './AnsweredList';
 
@@ -11,9 +12,10 @@ class Homepage extends Component {
     render() {
         return (
             <div>
-                {this.state.showAnswered ? (<div><button className="btn"><h2>Unanswered Questions</h2></button> <button className="btn" disabled style={{color: 'white', backgroundColor: 'red'}}><h2>Answered Questions</h2></button></div>) : 
-                (<div><button className="btn" disabled style={{color: 'white', backgroundColor: 'red'}}><h2>Unanswered Questions</h2></button> <button className="btn"><h2>Answered Questions</h2></button></div>)}
-                {this.state.showAnswered ? <AnsweredList /> : <UnansweredList />}
+            {this.state.showAnswered ? (<div><button className="btn"><h2>Unanswered Questions</h2></button> <button className="btn" disabled style={{color: 'white', backgroundColor: 'red'}}><h2>Answered Questions</h2></button></div>) : 
+            (<div><button className="btn" disabled style={{color: 'white', backgroundColor: 'red'}}><h2>Unanswered Questions</h2></button> <button className="btn"><h2>Answered Questions</h2></button></div>)}
+            {this.state.showAnswered ? <AnsweredList /> : <UnansweredList />}
+                {this.state.showAnswered ? <AnsweredList /> : <UnansweredList />}
             </div>
         );
     }
@@ -28,3 +30,4 @@ const mapStateToProps = (state) => ({
 
 // Turn Homepage into a container component connecting it to the redux store via connect().
 export default connect(mapStateToProps)(Homepage);
+
