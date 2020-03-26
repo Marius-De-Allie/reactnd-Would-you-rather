@@ -21,7 +21,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Switch>
-          <Route path="/" exact  component={Homepage} />
+          <Route path="/" exact  component={!this.props.loading && Homepage} />
           <Route path="/questions/:question_id" />
           <Route path="/add" />
           <Route path="/leaderboard" />
