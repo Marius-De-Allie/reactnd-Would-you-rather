@@ -25,7 +25,7 @@ class Homepage extends Component {
             <NavLink className="questions-btn" to="/" onClick={this.onUnansweredClick}>
                 Un-answered Questions
             </NavLink>
-            <NavLink className="questions-btn" to="/">
+            <NavLink className="questions-btn" to="/" onClick={this.onAnsweredClick}>
                 Answered Questions
             </NavLink>
                 {this.state.showAnswered ? <AnsweredList /> : <UnansweredList />}
