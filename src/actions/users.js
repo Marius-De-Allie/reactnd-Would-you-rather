@@ -25,5 +25,5 @@ const addAnswer = (qid) => ({
     answer: qid
 });
 
-export {RECEIVE_USERS, handleReceiveUsers, addAnswer};
+export {RECEIVE_USERS, ADD_ANSWER, handleReceiveUsers, addAnswer};
 
