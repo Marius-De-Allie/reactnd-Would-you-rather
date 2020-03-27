@@ -8,7 +8,7 @@ class QuestionForm extends Component {
             <div>
                 <h1>Would you rather</h1>
                 <div className="question-one">
-                    <input type="radio" name="question" />
+                    <input type="radio" name="question" id="one" />
                 </div>
                 <div className="question-two">
                     <input type="radio" name="question" />
