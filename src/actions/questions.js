@@ -2,6 +2,7 @@
 // Import getQuestions async API function.
 import { _getQuestions } from '../_DATA';
 const RECEIVE_QUESTIONS = 'RECEIVE_QUESTIONS';
+const ADD_VOTE = 'ADD_VOTE';
 
 const receiveQuestions = (questions) => ({
     type: RECEIVE_QUESTIONS,
