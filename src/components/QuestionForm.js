@@ -11,7 +11,7 @@ class QuestionForm extends Component {
                     <input type="radio" name="question" id="one" />
                 </div>
                 <div className="question-two">
-                    <input type="radio" name="question" />
+                    <input type="radio" name="question" id="two" />
                 </div>
                 <button>Submit</button>
             </div>
