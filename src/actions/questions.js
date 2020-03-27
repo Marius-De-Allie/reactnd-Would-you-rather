@@ -27,4 +27,4 @@ const addVote = (authedUser) => ({
     authedUser
 });
 
-export {RECEIVE_QUESTIONS, handleReceiveQuestions, addVote}; 
+export {RECEIVE_QUESTIONS, ADD_VOTE, handleReceiveQuestions, addVote}; 
