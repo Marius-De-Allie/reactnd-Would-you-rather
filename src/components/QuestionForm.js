@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 class QuestionForm extends Component {
     render() {
+        console.log(this.props)
         return (
             <div>
                 <h1>Would you rather</h1>
@@ -18,8 +19,13 @@ class QuestionForm extends Component {
     }
 };
 
-const MapStateToProps = (state) => ({
-    questions: state.questions
-});
+const MapStateToProps = (state, { match }) => {
+    const question = state.questions[match.params.question_id];
+    return {
+        questions: state.questions,
+        question
+
+    }
+};
 
 export default connect(MapStateToProps)(QuestionForm);
