@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 class QuestionForm extends Component {
     render() {
-        console.log(this.props)
+        console.log(this.props);
         return (
             <div>
                 <h1>Would you rather</h1>
@@ -23,8 +23,9 @@ const MapStateToProps = (state, { match }) => {
     const question = state.questions[match.params.question_id];
     return {
         questions: state.questions,
+        users: state.users,
+        authedUser: state.authedUser,
         question
-
     }
 };
 
