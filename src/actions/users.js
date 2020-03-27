@@ -20,5 +20,10 @@ const handleReceiveUsers = () => {
     }
 };
 
-export {RECEIVE_USERS, handleReceiveUsers};
+const addAnswer = (qid) => ({
+    type: ADD_ANSWER,
+    answer: qid
+});
+
+export {RECEIVE_USERS, handleReceiveUsers, addAnswer};
 
