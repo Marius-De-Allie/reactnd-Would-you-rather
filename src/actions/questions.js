@@ -22,4 +22,9 @@ const handleReceiveQuestions = () => {
     }
 };
 
-export {RECEIVE_QUESTIONS, handleReceiveQuestions}; 
+const addVote = (authedUser) => ({
+    type: ADD_VOTE,
+    authedUser
+});
+
+export {RECEIVE_QUESTIONS, handleReceiveQuestions, addVote}; 
