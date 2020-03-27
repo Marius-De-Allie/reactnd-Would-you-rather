@@ -13,8 +13,8 @@ const users = (state = {}, action) => {
                 [action.authedUser]: {
                     ...state[action.authedUser],
                     answers: {
-                        ...state[authedUser].answers,
-                        [action.qid]: answer
+                        ...state[action.authedUser].answers,
+                        [action.qid]: action.answer
                     }
                 }
             }
