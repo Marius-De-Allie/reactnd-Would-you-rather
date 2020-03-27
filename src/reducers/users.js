@@ -1,5 +1,5 @@
 'use strict';
-import { RECEIVE_USERS } from '../actions/users';
+import { RECEIVE_USERS, ADD_ANSWER } from '../actions/users';
 
 
 // Users reducer, has default state of an empty object {}.
