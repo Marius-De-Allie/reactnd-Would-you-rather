@@ -1,6 +1,7 @@
 'use strict';
 import { _getUsers } from '../_DATA';
 const RECEIVE_USERS = 'RECEIVE_USERS';
+const ADD_ANSWER = 'ADD_ANSWER';
 
 const receiveUsers = (users) => ({
     type: RECEIVE_USERS,
