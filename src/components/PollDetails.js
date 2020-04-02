@@ -15,3 +15,5 @@ const mapStateToProps = ({users, authedUser}, ownProps) => ({
     authedUser,
     pollId: ownProps.match.params.question_id
 });
+
+export default PollDetails;
