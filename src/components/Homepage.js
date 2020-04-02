@@ -49,8 +49,8 @@ class Homepage extends Component {
 };
 
 // State from the redux store that will be passed to this component as props.
-const mapStateToProps = (state) => ({
-    authedUser: state.authedUser
+const mapStateToProps = ({authedUser}) => ({
+    authedUser
 }); 
 
 // Turn Homepage into a container component connecting it to the redux store via connect().
