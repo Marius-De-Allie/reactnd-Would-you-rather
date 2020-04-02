@@ -8,3 +8,7 @@ const PollDetails = (props) => {
         </div>
     );
 };
+
+const mapStateToProps = ({users, authedUser}) => ({
+    
+});
