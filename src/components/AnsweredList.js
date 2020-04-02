@@ -9,7 +9,7 @@ const AnsweredList = (props) => {
         <div>
             <h3>Answered Questions</h3>
             <ul>
-                {props.answeredIds.map(id => (
+                {authedUserAnswerIds.map(id => (
                     <li key={id}>
                         <QuestionsItem id={id}/>
                     </li>
