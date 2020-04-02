@@ -4,7 +4,7 @@ import UnanPollItem from './UnaPollItem';
 import AnsPollItem from './AnsPollItem';
 
 const PollDetails = (props) => {
-    renderUI = () => {
+    const renderUI = () => {
         // Check whether user is logged in.
         if(this.props.authedUser !== null) {
             // Create an array of the currently logged in user's answer IDs.
