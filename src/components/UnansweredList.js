@@ -19,7 +19,7 @@ const UnansweredList = (props) => {
 
 
 const mapStateToProps = (state) => ({
-    allQuestionIds: Object.keys(state.questions),
+    allQuestionIds: Object.keys(state.questions).sort((a,b) => questions[b].timestamp - questions[a].timestamp),
     questions: state.questions,
     users: state.users,
     authedUser: state.authedUser
