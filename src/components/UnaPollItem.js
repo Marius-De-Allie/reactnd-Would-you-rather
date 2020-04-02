@@ -10,7 +10,7 @@ const UnaPollItem = (props) => {
     );
 };
 
-const mapStateToProps = ({users, questions, authedUser}) => ({
+const mapStateToProps = ({users, questions, authedUser}, {pollid}) => ({
 
 });
 
