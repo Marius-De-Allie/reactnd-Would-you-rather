@@ -12,6 +12,5 @@ const PollDetails = (props) => {
 const mapStateToProps = ({users, authedUser}, ownProps) => ({
     users,
     authedUser,
-    
-
+    pollId: ownProps.match.params.question_id
 });
