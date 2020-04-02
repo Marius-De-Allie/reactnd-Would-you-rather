@@ -19,16 +19,29 @@ class Homepage extends Component {
             showAnswered: true
         }));
     };
+    // Declare function to conditionally render homepage UI content
+    renderHomepage = () => {
+        const homepage = this.props.authedUser !== null ? 
+        (
+            <React.Fragment>
+                <NavLink className="questions-btn" to="/" onClick={this.onUnansweredClick}>
+                    Un-answered Questions
+                </NavLink>
+                <NavLink className="questions-btn" to="/" onClick={this.onAnsweredClick}>
+                    Answered Questions
+                </NavLink>
+                {this.state.showAnswered ? <AnsweredList /> : <UnansweredList />}
+            </React.Fragment> 
+        ) : 
+            <React.Fragment>
+                <h2>Welcome</h2>
+                <h3>Please login at the top right to continue</h3>
+            </React.Fragment>;
+        return homepage;
+    };
     render() {
         return (
             <div>
-            <NavLink className="questions-btn" to="/" onClick={this.onUnansweredClick}>
-                Un-answered Questions
-            </NavLink>
-            <NavLink className="questions-btn" to="/" onClick={this.onAnsweredClick}>
-                Answered Questions
-            </NavLink>
-                {this.state.showAnswered ? <AnsweredList /> : <UnansweredList />}
             </div>
         );
     }
