@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import UnanPollItem from './UnaPollItem';
 
 const PollDetails = (props) => {
     
