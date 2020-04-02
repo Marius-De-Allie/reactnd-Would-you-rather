@@ -16,7 +16,7 @@ const AnsweredList = (props) => (
 
 
 const mapStateToProps = (state) => ({
-    allQuestionIds: Object.keys(state.questions),
+    allQuestionIds: Object.keys(state.questions).sort((a,b) => state.questions[b].timestamp - state.questions[a].timestamp),
     questions: state.questions,
     users: state.users,
     authedUser: state.authedUser
