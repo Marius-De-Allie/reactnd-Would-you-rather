@@ -21,7 +21,7 @@ const PollDetails = (props) => {
     };
     return (
         <div>
-            
+            {renderUI()}
         </div>
     );
 };
