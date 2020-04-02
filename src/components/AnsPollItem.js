@@ -8,3 +8,5 @@ const AnsPollItem = (props) => {
         </div>
     );
 };
+
+export default AnsPollItem;
