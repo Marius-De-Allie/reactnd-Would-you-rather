@@ -8,3 +8,5 @@ const UnaPollItem = (props) => {
         </div>
     );
 };
+
+export default UnaPollItem;
