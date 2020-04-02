@@ -11,17 +11,11 @@ const QuestionItem = (props) => {
     };
     return (
         <div>
-            <h3>{props.author.name} asks:</h3>
-            <div>
-                <div>Avatar Image</div>{/*Convert to img element*/}
-                <div className="question-content">
-                    <h3>Would you Rather</h3>
-                    <p>...{[props.question.optionOne.text]}...</p>
-                    <Link to={`questions/${props.question.id}`}>
-                        View Poll
-                    </Link>
-                </div>
-            </div>
+            <h3><span>AVATAR!!</span>{props.author.name} asks:</h3>
+            <p>...{[props.question.optionOne.text]}...</p>
+            <Link to={`questions/${props.question.id}`}>
+                View Poll
+            </Link>
         </div>
     );
 };
@@ -36,7 +30,8 @@ const mapStateToProps = ({questions, users, authedUser}, {id}) => {
         author,
         questions,
         users,
-        authedUser
+        authedUser,
+        id
     }
 };
 
