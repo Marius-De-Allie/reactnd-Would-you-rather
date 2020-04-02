@@ -3,11 +3,6 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 const QuestionItem = (props) => {
-    const onPollBtnClick = (evt, questionId) => {
-        evt.preventDefault();
-        console.log('questionId', questionId);
-
-    };
     return (
         <div>
             <h3><span>AVATAR!!</span>{props.author.name} asks:</h3>
