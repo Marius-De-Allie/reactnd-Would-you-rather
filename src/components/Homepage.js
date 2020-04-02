@@ -42,6 +42,7 @@ class Homepage extends Component {
     render() {
         return (
             <div>
+                {this.renderHomepage()}
             </div>
         );
     }
