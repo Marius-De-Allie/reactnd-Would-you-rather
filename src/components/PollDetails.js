@@ -16,4 +16,4 @@ const mapStateToProps = ({users, authedUser}, ownProps) => ({
     pollId: ownProps.match.params.question_id
 });
 
-export default PollDetails;
+export default connect(mapStateToProps)(PollDetails);
