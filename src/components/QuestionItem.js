@@ -35,5 +35,5 @@ const mapStateToProps = ({questions, users, authedUser}, {id}) => {
     }
 };
 
-export default withRouter(connect(mapStateToProps)(QuestionItem));
+export default connect(mapStateToProps)(QuestionItem);
 
