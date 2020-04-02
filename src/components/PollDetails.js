@@ -9,6 +9,6 @@ const PollDetails = (props) => {
     );
 };
 
-const mapStateToProps = ({users, authedUser}) => ({
-    
+const mapStateToProps = ({users, authedUser}, ownProps) => ({
+
 });
