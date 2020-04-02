@@ -19,6 +19,7 @@ const UnansweredList = (props) => {
 
 
 const mapStateToProps = (state) => ({
+    allQuestionIds: Object.keys(state.questions),
     questions: state.questions,
     users: state.users,
     authedUser: state.authedUser
