@@ -24,7 +24,7 @@ class App extends React.Component {
       <div className="App">
         <Switch>
           <Route path="/" exact  component={!this.props.loading && Homepage} />
-          <Route path="/questions/:question_id" component={QuestionForm} />
+          <Route path="/questions/:question_id" component={PollDetails} />
           <Route path="/add" />
           <Route path="/leaderboard" />
           <Route component={NotfoundPage} />
