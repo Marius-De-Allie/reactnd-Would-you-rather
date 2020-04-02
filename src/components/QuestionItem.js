@@ -13,7 +13,7 @@ const QuestionItem = (props) => {
         <div>
             <h3><span>AVATAR!!</span>{props.author.name} asks:</h3>
             <p>...{[props.question.optionOne.text]}...</p>
-            <Link to={`questions/${props.question.id}`}>
+            <Link to={`questions/${props.id}`}>
                 View Poll
             </Link>
         </div>
