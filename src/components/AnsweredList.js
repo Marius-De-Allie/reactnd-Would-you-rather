@@ -16,9 +16,6 @@ const AnsweredList = (props) => (
 
 
 const mapStateToProps = (state) => ({
-    answeredIds: Object.keys(state.questions).filter(question => Object.keys(state.users[state.authedUser].answers)
-        .includes(question)
-    ),
     questions: state.questions,
     users: state.users,
     authedUser: state.authedUser
