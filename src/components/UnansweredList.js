@@ -3,9 +3,11 @@ import { connect } from 'react-redux';
 import QuestionItem from './QuestionItem';
 
 const UnansweredList = (props) => {
-    console.log(props);
+    // Array of  all question ids for all questions answered by currently authenticated user.
+    const authedUserAnswerIds = Object.keys(this.props.users[this.props.authedUser].answers);
     return (
         <div>
+            <h3>Un-Answered Questions</h3>
             <ul>
                 {props.UnansweredIds.map(id => (
                     <li key={id}>
