@@ -10,7 +10,6 @@ import { setAuthedUser } from '../actions/authedUser';
 import Homepage from './Homepage';
 // Import 404 page component.
 import NotfoundPage from './NotfoundPage';
-import QuestionForm from './QuestionForm';
 import PollDetails from './PollDetails';
 
 class App extends React.Component {
