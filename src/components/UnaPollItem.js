@@ -10,4 +10,8 @@ const UnaPollItem = (props) => {
     );
 };
 
+const mapStateToProps = ({users, questions, authedUser}) => ({
+
+});
+
 export default UnaPollItem;
