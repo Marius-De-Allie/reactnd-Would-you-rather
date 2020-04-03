@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import NotfoundPage from './NotfoundPage';
 import { addAnswer } from '../actions/users';
 import { addVote } from '../actions/questions';
+import { _saveQuestionAnswer } from '../_DATA';
 
 const UnaPollItem = (props) => {
     onFormSubmit = (evt) => {
