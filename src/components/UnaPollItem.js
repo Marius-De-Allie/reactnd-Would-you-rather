@@ -17,4 +17,4 @@ const mapStateToProps = ({users, questions, authedUser}, {pollid}) => ({
     pollid
 });
 
-export default UnaPollItem;
+export default connect(mapStateToProps)(UnaPollItem);
