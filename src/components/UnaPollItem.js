@@ -23,6 +23,8 @@ const UnaPollItem = (props) => {
             // Dispatch actions to update users nd questions state in redux store accordingly when a poll is voted on.
             props.dispatch(addAnswer(ansPollObject));
             props.dispatch(addVote(ansPollObject));
+            // Call API (async) function to update database when poll is voted on.
+            _saveQuestionAnswer(ansPollObject);
         }
     };
 
