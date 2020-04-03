@@ -3,6 +3,22 @@ import { connect } from 'react-redux';
 import NotfoundPage from './NotfoundPage';
 
 const UnaPollItem = (props) => {
+    onFormSubmit = (evt) => {
+        evt.preventDefault();
+        const answer = evt.target.elements.poll.value;
+        // Array of currently logged in user's answer ids.
+        const authedUserAnswerIds = Object.keys(prop.users[props.authedUser].answers);
+        if(authedUserAnswerIds.includes(props.pollid)) {
+            alert(`You've already voted on this poll`);
+        } else {
+            // Declare object to hold all key properties for poll that has just been voted on.
+            const ansPollObject = {
+                authedUser: props.authedUser,
+                qid: props.pollid,
+                answer
+            }
+        }
+    };
 
     return (
         props.questions[props.pollid] === undefined ? <NotfoundPage /> :
