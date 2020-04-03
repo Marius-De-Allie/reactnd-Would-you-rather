@@ -1,4 +1,3 @@
-'use strict';
 import { RECEIVE_QUESTIONS, ADD_VOTE } from '../actions/questions';
 
 // Questions reducer, has default state of an empty object {}.
