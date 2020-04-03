@@ -20,7 +20,8 @@ const handleReceiveUsers = () => {
     }
 };
 
-const addAnswer = (authedUser, qid, answer) => ({
+// Action creator to add answer id to users piece of state
+const addAnswer = ({authedUser, qid, answer}) => ({
     type: ADD_ANSWER,
     authedUser,
     qid,
