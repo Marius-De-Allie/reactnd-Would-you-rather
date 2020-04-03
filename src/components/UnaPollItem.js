@@ -6,7 +6,7 @@ import { addVote } from '../actions/questions';
 import { _saveQuestionAnswer } from '../_DATA';
 
 const UnaPollItem = (props) => {
-    onFormSubmit = (evt) => {
+    const onFormSubmit = (evt) => {
         evt.preventDefault();
         const answer = evt.target.elements.poll.value;
         // Array of currently logged in user's answer ids.
@@ -33,7 +33,7 @@ const UnaPollItem = (props) => {
         <div>
             <h3>Would you Rather</h3>
             <p>{props.users[props.questions[props.pollid].author].name} asks:</p>
-            <form>
+            <form onSubmit={onFormSubmit}>
                 <div>
                     <input type="radio" id="opt-one" name="poll" value="optionOne" />
                     <label htmlFor="opt-one">{props.questions[props.pollid].optionOne.text}</label>
