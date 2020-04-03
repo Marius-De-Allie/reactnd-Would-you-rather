@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import NotfoundPage from './NotfoundPage';
+import { addAnswer } from '../actions/users';
 
 const UnaPollItem = (props) => {
     onFormSubmit = (evt) => {
