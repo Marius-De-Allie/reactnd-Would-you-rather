@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const AnsPollItem = (props) => {
     const renderUI = () => {
-        
+        const {users, questions, authedUser, pollid} = props; 
 
     };
     
