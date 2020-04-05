@@ -10,7 +10,7 @@ const AnsPollItem = (props) => {
         const optionOneVotes = questions[pollid].optionOne.votes.length;
         // Calculate number votes for selected poll's 2nd option.
         const optionTwoVotes = questions[pollid].optionTwo.votes.length;
-
+        // Conditionally render poll details UI.
         if(questions[pollid] === undefined) {
             return <h3>No poll with this ID exists, please try again</h3>
         } else {
