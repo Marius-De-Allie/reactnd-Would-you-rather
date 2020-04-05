@@ -38,10 +38,9 @@ const AnsPollItem = (props) => {
             );
         }
     };
-    
     return (
         <div>
-        
+            {renderUI()}
         </div>
     );
 };
