@@ -9,4 +9,8 @@ const AnsPollItem = (props) => {
     );
 };
 
+const mapStateToProps = ({users, questions, authedUser}) => ({
+
+});
+
 export default AnsPollItem;

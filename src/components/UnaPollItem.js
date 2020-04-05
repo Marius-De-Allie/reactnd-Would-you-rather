@@ -10,7 +10,7 @@ const UnaPollItem = (props) => {
         evt.preventDefault();
         const answer = evt.target.elements.poll.value;
         // Array of currently logged in user's answer ids.
-        const authedUserAnswerIds = Object.keys(prop.users[props.authedUser].answers);
+        const authedUserAnswerIds = Object.keys(props.users[props.authedUser].answers);
         if(authedUserAnswerIds.includes(props.pollid)) {
             alert(`You've already voted on this poll`);
         } else {
