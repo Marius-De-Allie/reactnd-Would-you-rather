@@ -2,6 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 const AnsPollItem = (props) => {
+    const renderUI = () => {
+        
+
+    };
     
     return (
         <div>
