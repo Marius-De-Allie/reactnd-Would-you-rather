@@ -8,6 +8,10 @@ const AnsPollItem = (props) => {
         const totalVotes = questions[pollid].optionOne.votes.length + questions[pollid].optionTwo.votes.length;
         // Calculate number votes for selected poll's 1st option.
         const optionOneVotes = questions[pollid].optionOne.votes.length;
+        // Calculate number votes for selected poll's 2nd option.
+        const optionTwoVotes = questions[pollid].optionTwo.votes.length;
+
+
 
     };
     
