@@ -3,7 +3,10 @@ import { connect } from 'react-redux';
 
 const AnsPollItem = (props) => {
     const renderUI = () => {
-        const {users, questions, authedUser, pollid} = props; 
+        const {users, questions, authedUser, pollid} = props;
+        // Calculate total number votes for selected question.
+        const totalVotes = questions[pollid].optionOne.votes.length + questions[pollid].optionTwo.votes.length;
+        
 
     };
     
