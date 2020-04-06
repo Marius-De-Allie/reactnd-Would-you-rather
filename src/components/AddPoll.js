@@ -7,7 +7,22 @@ class AddPoll extends React.Component {
         optionOne: '',
         optionTwo: ''
     };
+    
+    onFormSubmit = (evt) => {
+        evt.preventDefault();
+        if(evt.target.elements.one.value === '' || evt.target.elements.two.value === '') {
+            alert('Please fill in both fields before submitting.');
+        } else {
+        // Add question to redux store.
+            const optionOneText = this.state.optionOne;
+            const optionTwoText = this.state.optionTwo;
+            const author = this.props.authedUser;
+            
 
+        }
+        
+    }
+    
     renderUI = () => {
         const {optionOne, optionTwo} = this.state;
         const {authedUser} = this.props;
