@@ -17,7 +17,13 @@ class AddPoll extends React.Component {
             const optionOneText = this.state.optionOne;
             const optionTwoText = this.state.optionTwo;
             const author = this.props.authedUser;
-            
+            // Create question object to pass into action creator.
+            const question = {
+                author,
+                optionOneText,
+                optionTwoText
+            };
+
 
         }
         
