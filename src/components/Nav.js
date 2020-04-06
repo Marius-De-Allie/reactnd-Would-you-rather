@@ -8,7 +8,9 @@ const Nav = props => {
     console.log(props);
 
     const onLogoutClick = () => {
-        
+        // Dispatch action creator to set authedUser redux store state to value of null.
+        props.dispatch(setAuthedUser());
+
 
     };
 
