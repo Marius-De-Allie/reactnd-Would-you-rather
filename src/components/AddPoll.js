@@ -41,7 +41,7 @@ class AddPoll extends React.Component {
                     <h3>Would you Rather</h3>
                     <h4>Add Poll</h4>
                     <div>
-                        <form>
+                        <form onSubmit={this.onFormSubmit}>
                             <div>
                                 <input 
                                     type="text" 
