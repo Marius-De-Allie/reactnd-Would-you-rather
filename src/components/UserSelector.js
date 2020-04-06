@@ -22,4 +22,4 @@ const UserSelector = (props) => {
     );
 };
 
-export default UserSelector;
+export default connect()(UserSelector);
