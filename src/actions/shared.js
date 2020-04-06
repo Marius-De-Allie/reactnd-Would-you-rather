@@ -16,7 +16,12 @@ const handleAddQuestion = (questionObj) => {
         return _saveQuestionAnswer(questionObj)
         .then((question) => {
             dispatch(addQuestion(question));
-
+            dispatch(addQuestionUser(question));
+        })
+        .catch(e => {
+            alert('Error adding new poll, please try again!', e);
         });
     }
 };
+
+export {handleAddQuestion};
