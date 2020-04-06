@@ -1,6 +1,10 @@
 import React from 'react';
 
 const UserSelector = (props) => {
+    
+    const onChangeHandler = evt => {
+    };
+    
     return (
         <React.Fragment>
             <div>
