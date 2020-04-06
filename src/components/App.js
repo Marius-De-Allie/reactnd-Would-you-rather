@@ -11,6 +11,7 @@ import Homepage from './Homepage';
 // Import 404 page component.
 import NotfoundPage from './NotfoundPage';
 import PollDetails from './PollDetails';
+import Nav from './Nav';
 
 class App extends React.Component {
   componentDidMount() {
