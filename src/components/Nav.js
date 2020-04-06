@@ -6,6 +6,12 @@ import { setAuthedUser } from '../actions/authedUser';
 
 const Nav = props => {
     console.log(props);
+
+    const onLogoutClick = () => {
+        
+
+    };
+
     const renderLogin = () => {
         if(props.authedUser === null) {
             return <UserSelector />;
