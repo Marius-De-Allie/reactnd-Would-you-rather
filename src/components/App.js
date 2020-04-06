@@ -22,6 +22,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <Nav />
         <Switch>
           <Route path="/" exact  component={Homepage} />
           <Route path="/questions/:question_id" component={PollDetails} />
