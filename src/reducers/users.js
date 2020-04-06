@@ -1,4 +1,4 @@
-import { RECEIVE_USERS, ADD_ANSWER } from '../actions/users';
+import { RECEIVE_USERS, ADD_ANSWER, ADD_QUESTION_USER } from '../actions/users';
 
 
 // Users reducer, has default state of an empty object {}.
