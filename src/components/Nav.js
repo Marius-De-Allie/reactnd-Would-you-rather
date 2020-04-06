@@ -5,6 +5,21 @@ import UserSelector from './UserSelector';
 
 const Nav = props => {
     console.log(props);
+    const renderLogin = () => {
+        if(props.authedUser === null) {
+            return <UserSelector />;
+        } else {
+            return (
+                <React.Fragment>
+                    <div className="user-info">
+                        <div>User Avatar goes here</div>
+                        <span>{props.users[props.authedUser].name}</span>
+                        <button>Logout</button>
+                    </div>
+                </React.Fragment>
+            );
+        }
+    };
 
     return (
         <div>
