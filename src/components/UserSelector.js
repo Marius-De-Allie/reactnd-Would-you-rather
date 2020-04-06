@@ -3,6 +3,7 @@ import React from 'react';
 const UserSelector = (props) => {
     
     const onChangeHandler = evt => {
+        const value = evt.target.value;
     };
     
     return (
