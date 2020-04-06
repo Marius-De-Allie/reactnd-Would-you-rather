@@ -12,7 +12,10 @@ const handleAnswerQuestion = (authedUser, qid, answer) => {
 // Thunk action creator for adding question to database asynchronously and to redux store.
 const handleAddQuestion = (questionObj) => {
     return(dispatch) => {
-        
+        // Call API async function to save question to DB.
+        return _saveQuestionAnswer(questionObj)
+        .then((question) => {
 
+        });
     }
 };
