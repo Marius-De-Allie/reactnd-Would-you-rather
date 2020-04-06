@@ -8,6 +8,13 @@ class AddPoll extends React.Component {
         optionOne: '',
         optionTwo: ''
     };
+
+    onInputOneChange = (evt) => {
+        const optionOne = evt.target.value.trimStart();
+        this.setState(() => {
+            optionOne
+        });
+    } 
     
     onFormSubmit = (evt) => {
         evt.preventDefault();
