@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 const UserSelector = (props) => {
     
@@ -9,7 +10,7 @@ const UserSelector = (props) => {
     return (
         <React.Fragment>
             <div>
-                <Label htmlFor="user-select">Login</Label>
+                <label htmlFor="user-select">Login</label>
             </div>
             <select defaultValue="" name="users" id="user-select">
                 <option disabled value="">--Select a user to login--</option>
