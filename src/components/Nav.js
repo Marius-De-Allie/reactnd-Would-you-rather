@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import UserSelector from './UserSelector';
 import { setAuthedUser } from '../actions/authedUser';
@@ -10,7 +10,6 @@ const Nav = props => {
     const onLogoutClick = () => {
         // Dispatch action creator to set authedUser redux store state to value of null.
         props.dispatch(setAuthedUser());
-
 
     };
 
