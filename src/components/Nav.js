@@ -10,7 +10,8 @@ const Nav = props => {
     const onLogoutClick = () => {
         // Dispatch action creator to set authedUser redux store state to value of null.
         props.dispatch(setAuthedUser());
-
+        // Redirect to homepage on logout.
+        prop.history.push('/');
     };
 
     const renderLogin = () => {
