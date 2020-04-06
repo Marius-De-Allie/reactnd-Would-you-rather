@@ -28,6 +28,14 @@ const users = (state = {}, action) => {
                     }
                 }
             }
+        case ADD_QUESTION_USER:
+            return {
+                ...state,
+                [action.question.author]: {
+                    ...state[action.question.author],
+                    questions: [...state[action.question.author].questions, action.question.id]
+                }
+            }
         default:
             return state;
     }
