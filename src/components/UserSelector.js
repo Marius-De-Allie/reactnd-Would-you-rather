@@ -2,14 +2,17 @@ import React from 'react';
 
 const UserSelector = (props) => {
     return (
-        <div>
-            <select name="users" id="user-select">
-                <option>--Select a user to login--</option>
+        <React.Fragment>
+            <div>
+                <Label htmlFor="user-select">Login</Label>
+            </div>
+            <select defaultValue="" name="users" id="user-select">
+                <option disabled value="">--Select a user to login--</option>
                 <option value="sarahedo">Sarah Edo</option>
                 <option value="tylermcginnis">Tyler McGinnis</option>
                 <option value="johndoe">John Doe</option>
             </select>
-        </div>
+        </React.Fragment>
     );
 };
 
