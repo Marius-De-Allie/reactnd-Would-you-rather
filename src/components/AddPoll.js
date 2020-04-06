@@ -6,6 +6,13 @@ class AddPoll extends React.Component {
         optionOne: '',
         optionTwo: ''
     };
+     render() {
+         return (
+             <div>
+                
+             </div>
+         );
+     }
     
 
 };
