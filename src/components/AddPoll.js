@@ -7,6 +7,47 @@ class AddPoll extends React.Component {
         optionOne: '',
         optionTwo: ''
     };
+
+    renderUI = () => {
+        const {optionOne, optionTwo} = this.state;
+        const {authedUser} = this.props;
+        if(authedUser !== null) {
+            return (
+                <React.Fragment>
+                    <h3>Would you Rather</h3>
+                    <h4>Add Poll</h4>
+                    <div>
+                        <form>
+                            <div>
+                                <input 
+                                    type="text" 
+                                    id="option-one" 
+                                    placeholder="Enter 1st option." 
+                                    value={optionOne}
+                                    name="one"
+                                />
+                                <label htmlFor="option-one">Option One</label>
+                            </div>
+                            <div>
+                                <input 
+                                    type="text"
+                                    id="option-two"
+                                    placeholder="Enter 2nd option."
+                                    value={optionTwo}
+                                    name="two"
+                                />
+                                <label htmlFor="option-two">Option Two</label>
+                            </div>
+                            <input type="submit" disabled={optionOne === '' || optionTwo === ''} />
+                            {optionOne !== '' && optionTwo !== '' ? undefined : <p style={{color: 'red'}}>
+                            Please fill in both fields before submitting.
+                            </p>}
+                        </form>
+                    </div>
+                </React.Fragment>
+            );
+        }
+    }
      render() {
          return (
              <div>
