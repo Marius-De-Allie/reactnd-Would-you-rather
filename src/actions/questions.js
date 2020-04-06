@@ -36,4 +36,4 @@ const addQuestion = (question) => ({
     question
 });
 
-export {RECEIVE_QUESTIONS, ADD_VOTE, handleReceiveQuestions, addVote}; 
+export {RECEIVE_QUESTIONS, ADD_VOTE, ADD_QUESTION, handleReceiveQuestions, addVote, addQuestion}; 
