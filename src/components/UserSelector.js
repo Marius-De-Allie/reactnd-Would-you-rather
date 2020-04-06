@@ -8,7 +8,6 @@ const UserSelector = (props) => {
         const value = evt.target.value;
         // dispatch action creator to set authedUser state in redux store to currently select user.
         props.dispatch(setAuthedUser(value));
-
     };
     
     return (
@@ -16,7 +15,12 @@ const UserSelector = (props) => {
             <div>
                 <label htmlFor="user-select">Login</label>
             </div>
-            <select defaultValue="" name="users" id="user-select">
+            <select 
+                defaultValue="" 
+                name="users" 
+                id="user-select"
+                onChange={onChangeHandler}
+            >
                 <option disabled value="">--Select a user to login--</option>
                 <option value="sarahedo">Sarah Edo</option>
                 <option value="tylermcginnis">Tyler McGinnis</option>
