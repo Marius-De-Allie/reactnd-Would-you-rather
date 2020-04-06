@@ -23,7 +23,7 @@ const Nav = props => {
                     <div className="user-info">
                         <div>User Avatar goes here</div>
                         <span>{props.users[props.authedUser].name}</span>
-                        <button>Logout</button>
+                        <button onClick={onLogoutClick}>Logout</button>
                     </div>
                 </React.Fragment>
             );
