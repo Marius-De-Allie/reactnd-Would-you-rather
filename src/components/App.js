@@ -16,7 +16,7 @@ class App extends React.Component {
   componentDidMount() {
     this.props.dispatch(handleReceiveUsers());
     this.props.dispatch(handleReceiveQuestions());
-    this.props.dispatch(setAuthedUser('sarahedo'));
+    // this.props.dispatch(setAuthedUser('sarahedo'));
   }
   render() {
     return (
