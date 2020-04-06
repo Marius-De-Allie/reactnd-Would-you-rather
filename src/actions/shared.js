@@ -1,4 +1,4 @@
-import {_saveQuestionAnswer } from '../_DATA';
+import {_saveQuestionAnswer, _saveQuestion } from '../_DATA';
 import { addQuestion } from './questions';
 import { addQuestionUser } from './users';
 
@@ -12,6 +12,7 @@ const handleAnswerQuestion = (authedUser, qid, answer) => {
 // Thunk action creator for adding question to database asynchronously and to redux store.
 const handleAddQuestion = (questionObj) => {
     return(dispatch) => {
+        
 
     }
 };
