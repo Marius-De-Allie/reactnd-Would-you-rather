@@ -63,6 +63,7 @@ class AddPoll extends React.Component {
                                     placeholder="Enter 1st option." 
                                     value={optionOne}
                                     name="one"
+                                    onChange={this.onInputOneChange}
                                 />
                                 <label htmlFor="option-one">Option One</label>
                             </div>
