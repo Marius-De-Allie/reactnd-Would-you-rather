@@ -51,4 +51,4 @@ const mapStateToProps = ({authedUser, users}) => ({
     users
 });
 
-export default connect(mapStateToProps)(Nav);
+export default withRouter(connect(mapStateToProps)(Nav));
