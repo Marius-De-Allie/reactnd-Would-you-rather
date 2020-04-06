@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
-import { connect } from 'react-redux';
+import { connect, withRouter } from 'react-redux';
 import UserSelector from './UserSelector';
 import { setAuthedUser } from '../actions/authedUser';
 
@@ -9,7 +9,7 @@ const Nav = props => {
 
     const onLogoutClick = () => {
         // Dispatch action creator to set authedUser redux store state to value of null.
-        props.dispatch(setAuthedUser());
+        props.dispatch(setAuthedUser(null));
         // Redirect to homepage on logout.
         props.history.push('/');
     };
