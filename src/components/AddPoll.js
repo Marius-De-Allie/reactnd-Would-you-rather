@@ -21,3 +21,5 @@ class AddPoll extends React.Component {
 const mapStateToProps = ({authedUser}) => ({
     authedUser
 });
+
+export default connect(mapStateToProps)(AddPoll);
