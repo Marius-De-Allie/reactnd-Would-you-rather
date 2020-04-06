@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
-import { connect, withRouter } from 'react-redux';
+import { connect } from 'react-redux';
 import UserSelector from './UserSelector';
 import { setAuthedUser } from '../actions/authedUser';
 
