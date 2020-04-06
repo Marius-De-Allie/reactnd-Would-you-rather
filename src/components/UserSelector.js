@@ -12,3 +12,5 @@ const UserSelector = (props) => {
         </div>
     );
 };
+
+export default UserSelector;
