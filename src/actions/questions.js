@@ -3,7 +3,7 @@ import { _getQuestions } from '../_DATA';
 
 const RECEIVE_QUESTIONS = 'RECEIVE_QUESTIONS';
 const ADD_VOTE = 'ADD_VOTE';
-const ADD_QUESTION = 'ADD-QUESTION';
+const ADD_QUESTION = 'ADD_QUESTION';
 
 const receiveQuestions = (questions) => ({
     type: RECEIVE_QUESTIONS,
@@ -29,6 +29,11 @@ const addVote = ({authedUser, qid, answer}) => ({
     authedUser,
     qid,
     answer
+});
+
+const addQuestion = (question) => ({
+    type: ADD_QUESTION,
+    question
 });
 
 export {RECEIVE_QUESTIONS, ADD_VOTE, handleReceiveQuestions, addVote}; 
