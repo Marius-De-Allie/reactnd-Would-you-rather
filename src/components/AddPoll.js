@@ -24,8 +24,8 @@ class AddPoll extends React.Component {
                 optionOneText,
                 optionTwoText
             };
-
-
+            // Dispatch handleAddQuestion thunk action creator.
+            this.props.dispatch(handleAddQuestion(question));
         }
         
     }
