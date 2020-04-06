@@ -16,3 +16,7 @@ class AddPoll extends React.Component {
     
 
 };
+
+const mapStateToProps = ({authedUser}) => ({
+    authedUser
+});
