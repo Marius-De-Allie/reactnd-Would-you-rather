@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
+import UserSelector from './UserSelector';
 
 const Nav = props => {
     console.log(props);
