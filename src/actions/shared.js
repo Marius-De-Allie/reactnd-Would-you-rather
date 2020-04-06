@@ -15,6 +15,7 @@ const handleAddQuestion = (questionObj) => {
         // Call API async function to save question to DB.
         return _saveQuestionAnswer(questionObj)
         .then((question) => {
+            dispatch(addQuestion(question));
 
         });
     }
