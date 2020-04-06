@@ -86,17 +86,18 @@ class AddPoll extends React.Component {
                     </div>
                 </React.Fragment>
             );
+        } else {
+            return <h3>Please login at the top right to continue to the homepage</h3>
         }
-    }
+    };
+
      render() {
          return (
              <div>
-                
+                {this.renderUI()}
              </div>
          );
      }
-    
-
 };
 
 const mapStateToProps = ({authedUser}) => ({
