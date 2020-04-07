@@ -26,7 +26,7 @@ const Leaderboard = props => {
 
     return (
         <div className="leaderboard">
-            
+            {ui}
         </div>
     );
 };

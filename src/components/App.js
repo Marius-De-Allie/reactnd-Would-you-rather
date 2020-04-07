@@ -12,6 +12,7 @@ import Homepage from './Homepage';
 import NotfoundPage from './NotfoundPage';
 import PollDetails from './PollDetails';
 import Nav from './Nav';
+import Leaderboard from './Leaderboard';
 
 class App extends React.Component {
   componentDidMount() {
