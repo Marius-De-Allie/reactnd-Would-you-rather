@@ -4,7 +4,7 @@ import QuestionsItem from './QuestionItem';
 
 const AnsweredList = (props) => {
     // Array of question ids for all questions answered by currently authenticated user.
-    const authedUserAnswerIds = Object.keys(this.props.users[this.props.authedUser].answers);
+    const authedUserAnswerIds = Object.keys(props.users[props.authedUser].answers);
     return (
         <div>
             <h3>Answered Questions</h3>
@@ -18,7 +18,6 @@ const AnsweredList = (props) => {
         </div>
     )
 };
-
 
 const mapStateToProps = (state) => ({
     users: state.users,
