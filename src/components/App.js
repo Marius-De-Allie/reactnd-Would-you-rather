@@ -13,6 +13,7 @@ import NotfoundPage from './NotfoundPage';
 import PollDetails from './PollDetails';
 import Nav from './Nav';
 import Leaderboard from './Leaderboard';
+import LeaderboardItem from './LeaderboardItem';
 
 class App extends React.Component {
   componentDidMount() {
@@ -28,7 +29,7 @@ class App extends React.Component {
           <Route path="/" exact  component={Homepage} />
           <Route path="/questions/:question_id" component={PollDetails} />
           <Route path="/add" />
-          <Route path="/leaderboard" />
+          <Route path="/leaderboard" component={LeaderboardItem} />
           <Route component={NotfoundPage} />
         </Switch>
       </div>
