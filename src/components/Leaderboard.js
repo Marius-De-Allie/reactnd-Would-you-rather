@@ -1,7 +1,28 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import LeaderboardItem from './LeaderboardItem';
 
 const Leaderboard = props => {
+    const ui = props.authedUser === null ? <h3>Please login at the top right to continue to the homepage</h3> :
+    (
+        <React.Fragment>
+            <h1 className="header-text">Leaderboard</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th><h3>UserName</h3></th>
+                        <th><h3>Answered</h3></th>
+                        <th><h3>Asked</h3></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        {props.userIds.map(id => <LeaderboardItem key={id} id={id} />)}
+                    </tr>
+                </tbody>
+            </table>
+        </React.Fragment>
+    );
 
     return (
         <div className="leaderboard">
