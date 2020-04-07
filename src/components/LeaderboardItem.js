@@ -3,11 +3,13 @@ import { connect } from 'react-redux';
 
 const LeaderboardItem = () => {
     return (
-        <React.Fragment>
-            <td>name</td>
-            <td>answered</td>
-            <td>asked</td>
-        </React.Fragment>
+        <tbody>
+            <tr>
+                <td>name</td>
+                <td>answered</td>
+                <td>asked</td>
+            </tr>
+        </tbody>
     );
 };
 

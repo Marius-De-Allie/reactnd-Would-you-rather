@@ -15,11 +15,7 @@ const Leaderboard = props => {
                         <th><h3>Asked</h3></th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        {props.userIds.map(id => <LeaderboardItem key={id} id={id} />)}
-                    </tr>
-                </tbody>
+                {props.userIds.map(id => <LeaderboardItem key={id} id={id} />)}
             </table>
         </React.Fragment>
     );

@@ -14,6 +14,7 @@ import PollDetails from './PollDetails';
 import Nav from './Nav';
 import Leaderboard from './Leaderboard';
 import LeaderboardItem from './LeaderboardItem';
+import AddPoll from './AddPoll';
 
 class App extends React.Component {
   componentDidMount() {
