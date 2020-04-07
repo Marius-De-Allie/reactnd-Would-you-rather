@@ -37,7 +37,6 @@ const UnaPollItem = (props) => {
                 <div>
                     <input type="radio" id="opt-one" name="poll" value="optionOne" />
                     <label htmlFor="opt-one">{props.questions[props.pollid].optionOne.text}</label>
-                    <input type="radio" id="opt-two" name="poll" value="optionTwo" />
                 </div>
                 <div>
                     <input type="radio" id="opt-two" name="poll" value="optionTwo" />
