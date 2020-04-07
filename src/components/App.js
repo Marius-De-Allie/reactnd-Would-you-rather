@@ -29,7 +29,7 @@ class App extends React.Component {
         <Switch>
           <Route path="/" exact  component={Homepage} />
           <Route path="/questions/:question_id" component={PollDetails} />
-          <Route path="/add" component={AddPoll} />
+          <Route path="/add" exact component={AddPoll} />
           <Route path="/leaderboard" exact component={LeaderboardItem} />
           <Route component={NotfoundPage} />
         </Switch>
