@@ -17,6 +17,14 @@ const mapStateToProps = ({users, authedUser}) => {
             total: (users[el].questions.length + Object.keys(users[el].answers).length)
         }
     });
+    // Sort userTotals array in descending order by each element object's total property.
+    userTotals = userTotals.sort((a, b) => {
+        if(b.total > a.total) {
+            return 1
+        } else {
+            return -1
+        }
+    }); 
 
 
 };
