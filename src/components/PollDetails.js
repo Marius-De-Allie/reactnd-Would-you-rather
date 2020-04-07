@@ -6,13 +6,13 @@ import AnsPollItem from './AnsPollItem';
 const PollDetails = (props) => {
     const renderUI = () => {
         // Check whether user is logged in.
-        if(this.props.authedUser !== null) {
+        if(props.authedUser !== null) {
             // Create an array of the currently logged in user's answer IDs.
-            const authedUserAnswerIds = Object.keys(this.props.users[this.props.authedUser].answers);
+            const authedUserAnswerIds = Object.keys(props.users[props.authedUser].answers);
             return (
                 <React.Fragment>
-                    {authedUserAnswerIds.includes(this.props.pollId) ? <AnsPollItem pollid={this.props.pollId}/> :
-                    <UnanPollItem pollid={this.props.pollId} />}
+                    {authedUserAnswerIds.includes(props.pollId) ? <AnsPollItem pollid={props.pollId}/> :
+                    <UnanPollItem pollid={props.pollId} />}
                 </React.Fragment>
             );
         } else {
