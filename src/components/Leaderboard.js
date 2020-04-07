@@ -33,3 +33,5 @@ const mapStateToProps = ({users, authedUser}) => {
         authedUser
     }
 };
+
+export default connect(mapStateToProps)(Leaderboard);
