@@ -11,3 +11,7 @@ const LeaderboardItem = () => {
         </tbody>
     );
 };
+
+const mapStateToProp = ({users}) => ({
+    users
+});
