@@ -13,7 +13,7 @@ const AnsPollItem = (props) => {
         const optionTwoVotes = questions[pollid].optionTwo.votes.length;
         // Conditionally render poll details UI.
         if(questions[pollid] === undefined) {
-            return <h3>No poll with this ID exists, please try again</h3>
+            return <NotfoundPage />
         } else {
             return (
                 <React.Fragment>
