@@ -27,6 +27,8 @@ const mapStateToProps = ({users, authedUser}) => {
     }); 
     // Modify sorted array to return only user ids as strings.
     const userIds = userTotals.map(user => user.userId);
-    
-
+    return {
+        userIds, // Array of user ids sorted in descending order by on user totals.
+        authedUser
+    }
 };
