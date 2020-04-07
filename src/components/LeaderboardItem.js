@@ -16,3 +16,5 @@ const LeaderboardItem = () => {
 const mapStateToProp = ({users}) => ({
     users
 });
+
+export default connect(mapStateToProp)(LeaderboardItem);
