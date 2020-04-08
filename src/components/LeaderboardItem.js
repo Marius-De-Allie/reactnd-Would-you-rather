@@ -14,7 +14,8 @@ const LeaderboardItem = () => {
 };
 
 const mapStateToProp = ({users}, {id}) => ({
-    users
+    users,
+    id
 });
 
 export default connect(mapStateToProp)(LeaderboardItem);
