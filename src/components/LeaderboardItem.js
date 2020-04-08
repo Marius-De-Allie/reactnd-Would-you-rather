@@ -13,7 +13,7 @@ const LeaderboardItem = () => {
     );
 };
 
-const mapStateToProp = ({users}) => ({
+const mapStateToProp = ({users}, {id}) => ({
     users
 });
 
