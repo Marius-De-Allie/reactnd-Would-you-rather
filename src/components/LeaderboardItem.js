@@ -1,13 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const LeaderboardItem = () => {
+const LeaderboardItem = props => {
     return (
         <tbody>
             <tr>
-                <td>name</td>
-                <td>answered</td>
-                <td>asked</td>
+                <td>{props.users[props.id].name}</td>
+                <td>{Object.keys(props.users[props.id].answers).length}</td>
+                <td>{props.users[props.id].questions.length}</td>
             </tr>
         </tbody>
     );
