@@ -13,7 +13,7 @@ const handleAnswerQuestion = (authedUser, qid, answer) => {
 const handleAddQuestion = (questionObj) => {
     return(dispatch) => {
         // Call API async function to save question to DB.
-        return _saveQuestionAnswer(questionObj)
+        return _saveQuestion(questionObj)
         .then((question) => {
             dispatch(addQuestion(question));
             dispatch(addQuestionUser(question));

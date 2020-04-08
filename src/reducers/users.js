@@ -5,7 +5,10 @@ import { RECEIVE_USERS, ADD_ANSWER, ADD_QUESTION_USER } from '../actions/users';
 const users = (state = {}, action) => {
     switch(action.type) {
         case RECEIVE_USERS:
-            return {...state, ...action.users};
+            return {
+                ...state, 
+                ...action.users
+            };
         case ADD_ANSWER:
             return {
                 ...state,
