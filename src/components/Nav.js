@@ -31,7 +31,7 @@ const Nav = props => {
     };
 
     return (
-        <div>
+        <div className="ui container">
             <div className="navlinks">
                 <ul>
                     <li><NavLink to="/" exact>Home</NavLink></li>
