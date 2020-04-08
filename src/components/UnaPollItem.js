@@ -24,7 +24,7 @@ const UnaPollItem = (props) => {
             props.dispatch(addAnswer(ansPollObject));
             props.dispatch(addVote(ansPollObject));
             // Call API (async) function to update database when poll is voted on.
-            _saveQuestionAnswer(ansPollObject);
+            _saveQuestionAnswer(ansPollObject)
         }
     };
 
