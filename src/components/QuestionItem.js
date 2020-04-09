@@ -4,12 +4,26 @@ import { Link } from 'react-router-dom';
 
 const QuestionItem = (props) => {
     return (
-        <div>
-            <h3><span>AVATAR!!</span>{props.author.name} asks:</h3>
-            <p>...{[props.question.optionOne.text]}...</p>
-            <Link to={`questions/${props.id}`}>
-                View Poll
-            </Link>
+        <div className="middle aligned item">
+            <img 
+                className="ui avatar image" 
+                src={props.users[props.questions[props.id].author].avatarURL}
+            />
+            <div className="content">
+                <h4 className="ui header">{props.users[props.questions[props.id].author].name} asked:</h4>
+                <h2 className="ui header">Would you Rather</h2>
+                <div className="description">
+                    <p>...{[props.question.optionOne.text]}...</p>
+                </div>
+            </div>
+            <div className="extra">
+                <Link 
+                    className="ui right floated button"
+                    to={`questions/${props.id}`}>
+                    View Poll
+                    <i className="right chevron icon"></i>
+                </Link>
+            </div>
         </div>
     );
 };
