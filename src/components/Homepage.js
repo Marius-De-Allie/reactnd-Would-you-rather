@@ -23,12 +23,12 @@ class Homepage extends Component {
         const homepage = this.props.authedUser !== null ? 
         (
             <React.Fragment>
-                <NavLink className="questions-btn" to="/" onClick={this.onUnansweredClick}>
+                <button className="questions-btn" to="/" onClick={this.onUnansweredClick}>
                     Un-answered Questions
-                </NavLink>
-                <NavLink className="questions-btn" to="/" onClick={this.onAnsweredClick}>
+                </button>
+                <button className="questions-btn" to="/" onClick={this.onAnsweredClick}>
                     Answered Questions
-                </NavLink>
+                </button>
                 {this.state.showAnswered ? <AnsweredList /> : <UnansweredList />}
             </React.Fragment> 
         ) : 
