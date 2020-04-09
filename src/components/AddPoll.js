@@ -51,40 +51,42 @@ class AddPoll extends React.Component {
         const {authedUser} = this.props;
         if(authedUser !== null) {
             return (
-                <div className="ui segment">
-                    <h3>Would you Rather</h3>
-                    <h4>Add Poll</h4>
-                    <div>
-                        <form onSubmit={this.onFormSubmit}>
-                            <div>
-                                <input 
-                                    type="text" 
-                                    id="option-one" 
-                                    placeholder="Enter 1st option." 
-                                    value={optionOne}
-                                    name="one"
-                                    onChange={this.onInputOneChange}
-                                />
-                                <label htmlFor="option-one">Option One</label>
-                            </div>
-                            <div>
-                                <input 
-                                    type="text"
-                                    id="option-two"
-                                    placeholder="Enter 2nd option."
-                                    value={optionTwo}
-                                    name="two"
-                                    onChange={this.onInputTwoChange}
-                                />
-                                <label htmlFor="option-two">Option Two</label>
-                            </div>
-                            <input type="submit" disabled={optionOne === '' || optionTwo === ''} />
-                            {optionOne !== '' && optionTwo !== '' ? undefined : <p style={{color: 'red'}}>
-                            Please fill in both fields before submitting.
-                            </p>}
-                        </form>
+                <React.Fragment>
+                    <h1 className="header">Add Poll</h1>
+                    <div className="ui segment">
+                        <h4>Would you Rather</h4>
+                        <div>
+                            <form className="ui form" onSubmit={this.onFormSubmit}>
+                                <div className="field">
+                                    <label htmlFor="option-one">Option One</label>
+                                    <input 
+                                        type="text" 
+                                        id="option-one" 
+                                        placeholder="Please enter 1st option." 
+                                        value={optionOne}
+                                        name="one"
+                                        onChange={this.onInputOneChange}
+                                    />
+                                </div>
+                                <div className="field">
+                                    <label htmlFor="option-two">Option Two</label>
+                                    <input 
+                                        type="text"
+                                        id="option-two"
+                                        placeholder="Please enter 2nd option."
+                                        value={optionTwo}
+                                        name="two"
+                                        onChange={this.onInputTwoChange}
+                                    />
+                                </div>
+                                <button className="ui blue button" type="submit" disabled={optionOne === '' || optionTwo === ''}>Submit</button>
+                                {optionOne !== '' && optionTwo !== '' ? undefined : <p style={{color: 'red'}}>
+                                Please fill in both fields before submitting.
+                                </p>}
+                            </form>
+                        </div>
                     </div>
-                </div>
+                </React.Fragment>
             );
         } else {
             return <h3>Please login at the top right to continue to the homepage</h3>

@@ -7,7 +7,7 @@ const AnsweredList = (props) => {
     const authedUserAnswerIds = Object.keys(props.users[props.authedUser].answers);
     return (
         <React.Fragment>
-            <h3>Answered Questions</h3>
+            <h1>Answered Questions</h1>
             <div className="ui segment">
                 <div className="ui very relaxed divided items">
                     {authedUserAnswerIds.map(id => (

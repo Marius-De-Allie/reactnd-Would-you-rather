@@ -8,7 +8,7 @@ const UnansweredList = (props) => {
     const unAnsweredIds = props.allQuestionIds.filter(questionId => !authedUserAnswerIds.includes(questionId));
     return (
         <React.Fragment>
-            <h3>Un-Answered Questions</h3>
+            <h1>Un-Answered Questions</h1>
             <div className="ui segment">
                 <div className="ui very relaxed divided items">
                     {unAnsweredIds.map(id => (
