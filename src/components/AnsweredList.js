@@ -11,8 +11,8 @@ const AnsweredList = (props) => {
             <div className="ui segment">
                 <div className="ui very relaxed divided items">
                     {authedUserAnswerIds.map(id => (
-                        <React.Fragment>
-                            <QuestionsItem key={id} id={id}/>
+                        <React.Fragment key={id}>
+                            <QuestionsItem id={id}/>
                         </React.Fragment>
                     ))}
                 </div>
