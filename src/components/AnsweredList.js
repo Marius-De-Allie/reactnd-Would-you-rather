@@ -6,7 +6,7 @@ const AnsweredList = (props) => {
     // Array of question ids for all questions answered by currently authenticated user.
     const authedUserAnswerIds = Object.keys(props.users[props.authedUser].answers);
     return (
-        <div>
+        <React.Fragment>
             <h3>Answered Questions</h3>
             <ul>
                 {authedUserAnswerIds.map(id => (
@@ -15,7 +15,7 @@ const AnsweredList = (props) => {
                     </li>
                 ))}
             </ul>
-        </div>
+        </React.Fragment>
     )
 };
 
