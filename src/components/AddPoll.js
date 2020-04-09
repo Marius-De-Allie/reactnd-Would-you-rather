@@ -51,7 +51,7 @@ class AddPoll extends React.Component {
         const {authedUser} = this.props;
         if(authedUser !== null) {
             return (
-                <React.Fragment>
+                <div>
                     <h3>Would you Rather</h3>
                     <h4>Add Poll</h4>
                     <div>
@@ -84,7 +84,7 @@ class AddPoll extends React.Component {
                             </p>}
                         </form>
                     </div>
-                </React.Fragment>
+                </div>
             );
         } else {
             return <h3>Please login at the top right to continue to the homepage</h3>
