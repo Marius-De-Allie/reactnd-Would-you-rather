@@ -12,7 +12,7 @@ const UserSelector = (props) => {
     
     return (
         <React.Fragment>
-            <div>
+            <div className="ui item">
                 <label htmlFor="user-select">Login</label>
             </div>
             <select 
@@ -31,3 +31,4 @@ const UserSelector = (props) => {
 };
 
 export default connect()(UserSelector);
+
