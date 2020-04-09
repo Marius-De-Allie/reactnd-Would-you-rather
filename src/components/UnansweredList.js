@@ -7,7 +7,7 @@ const UnansweredList = (props) => {
     const authedUserAnswerIds = Object.keys(props.users[props.authedUser].answers);
     const unAnsweredIds = props.allQuestionIds.filter(questionId => !authedUserAnswerIds.includes(questionId));
     return (
-        <div>
+        <React.Fragment>
             <h3>Un-Answered Questions</h3>
             <ul>
                 {unAnsweredIds.map(id => (
@@ -16,7 +16,7 @@ const UnansweredList = (props) => {
                     </li>
                 ))}
             </ul>
-        </div>
+        </React.Fragment>
     )
 };
 
