@@ -9,13 +9,15 @@ const UnansweredList = (props) => {
     return (
         <React.Fragment>
             <h3>Un-Answered Questions</h3>
-            <ul>
-                {unAnsweredIds.map(id => (
-                    <li key={id}>
-                        <QuestionItem id={id}/>
-                    </li>
-                ))}
-            </ul>
+            <div className="ui segment">
+                <ul>
+                    {unAnsweredIds.map(id => (
+                        <li key={id}>
+                            <QuestionItem id={id}/>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </React.Fragment>
     )
 };
