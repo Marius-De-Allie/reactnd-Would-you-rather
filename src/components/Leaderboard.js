@@ -7,7 +7,7 @@ const Leaderboard = props => {
     (
         <React.Fragment>
             <h1 className="header-text">Leaderboard</h1>
-            <table>
+            <table className="ui blue celled padded table">
                 <thead>
                     <tr>
                         <th><h3>UserName</h3></th>
