@@ -51,7 +51,7 @@ class AddPoll extends React.Component {
         const {authedUser} = this.props;
         if(authedUser !== null) {
             return (
-                <div>
+                <div className="ui segment">
                     <h3>Would you Rather</h3>
                     <h4>Add Poll</h4>
                     <div>
