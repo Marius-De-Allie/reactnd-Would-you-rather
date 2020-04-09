@@ -17,30 +17,39 @@ const AnsPollItem = (props) => {
         } else {
             return (
                 <React.Fragment>
-                    <h3>Would you Rather</h3>
-                    <p>{users[questions[pollid].author].name} asks:</p>
-                    <ul>
-                        <li>
-                            {questions[pollid].optionOne.text}
-                            {questions[pollid].optionOne.votes.includes(users[authedUser]) && <span> your selection</span>}
-                        </li>
-                        <p>{questions[pollid].optionOne.votes.length} {optionOneVotes !== 1 ? 'votes' : 'vote'} / 
-                            {Math.round(optionOneVotes / totalVotes * 100)}%
-                        </p>
-                        <li>
-                            {questions[pollid].optionTwo.text}
-                            {questions[pollid].optionTwo.votes.includes(users[authedUser]) && <span> your selection</span>}
-                        </li>
-                        <p>{questions[pollid].optionTwo.votes.length} {optionTwoVotes !== 1 ? 'votes' : 'vote'} / 
-                            {Math.round(optionTwoVotes / totalVotes * 100)}%
-                        </p>
-                    </ul>
+                    <h3 className="ui header">Poll Results</h3>
+                    <div className="ui centered card">
+                        <div className="content">
+                            <img 
+                                className="ui avatar image" 
+                                src={props.users[props.questions[props.pollid].author].avatarURL} 
+                            />
+                            {users[questions[pollid].author].name} asked:
+                        </div>
+                        <div className="content">
+                            <h3>Would you Rather</h3>
+                            <div className="description">
+                                <p>{questions[pollid].optionOne.text} {questions[pollid].optionOne.votes.includes(users[authedUser]) && <span> your selection</span>}</p>
+                            </div>
+                            <div style={{marginTop: ".5rem", marginBottom: "1rem"}} class="ui right floated blue label">
+                                <p style={{textAlign: "right"}}>{questions[pollid].optionOne.votes.length} {optionOneVotes !== 1 ? 'votes ' : 'vote '}  |
+                                {` ${Math.round(optionOneVotes / totalVotes * 100)} %`}</p>
+                            </div>
+                            <div className="description">
+                                <p>{questions[pollid].optionTwo.text} {questions[pollid].optionTwo.votes.includes(users[authedUser]) && <span> your selection</span>}</p>
+                            </div>
+                            <div style={{marginTop: ".5rem", marginBottom: "1rem"}} className="ui right floated blue label">
+                                <p style={{textAlign: "right"}}>{questions[pollid].optionTwo.votes.length} {optionTwoVotes !== 1 ? 'votes ' : 'vote '}  | 
+                                {` ${Math.round(optionTwoVotes / totalVotes * 100)} %`}</p>
+                            </div>
+                        </div>
+                    </div>
                 </React.Fragment>
             );
         }
     };
     return (
-        <div>
+        <div style={{marginTop: "2rem"}}>
             {renderUI()}
         </div>
     );
@@ -54,3 +63,4 @@ const mapStateToProps = ({users, questions, authedUser}, {pollid}) => ({
 });
 
 export default connect(mapStateToProps)(AnsPollItem);
+
