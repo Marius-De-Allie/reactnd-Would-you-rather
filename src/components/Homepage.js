@@ -23,12 +23,13 @@ class Homepage extends Component {
         const homepage = this.props.authedUser !== null ? 
         (
             <React.Fragment>
-                <button className="ui button" to="/" onClick={this.onUnansweredClick}>
-                    Un-answered Questions
-                </button>
-                <button className="ui blue button" to="/" onClick={this.onAnsweredClick}>
-                    Answered Questions
-                </button>
+                {this.state.showAnswered ? <button className="ui button" to="/" onClick={this.onUnansweredClick}>
+                    Click here to view Un-answered Questions
+                    </button> :
+                    <button className="ui blue button" to="/" onClick={this.onAnsweredClick}>
+                        Answered Questions
+                    </button>
+                }
                 {this.state.showAnswered ? <AnsweredList /> : <UnansweredList />}
             </React.Fragment> 
         ) : 
