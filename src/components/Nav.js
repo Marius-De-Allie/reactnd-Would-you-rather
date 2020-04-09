@@ -21,7 +21,7 @@ const Nav = props => {
             return (
                 <React.Fragment>
                     <div className="user-info">
-                        <div>User Avatar goes here</div>
+                        <img className="ui avatar image" src={props.users[props.authedUser].avatarURL} />
                         <span>{props.users[props.authedUser].name}</span>
                         <button onClick={onLogoutClick}>Logout</button>
                     </div>
