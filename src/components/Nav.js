@@ -23,7 +23,7 @@ const Nav = props => {
                     <div className="user-info">
                         <img className="ui avatar image" src={props.users[props.authedUser].avatarURL} />
                         <span>{props.users[props.authedUser].name}</span>
-                        <button onClick={onLogoutClick}>Logout</button>
+                        <button className="ui tiny button" onClick={onLogoutClick}>Logout</button>
                     </div>
                 </React.Fragment>
             );
@@ -32,7 +32,7 @@ const Nav = props => {
 
     return (
         <div className="ui container">
-            <div className="ui secondary pointing menu">
+            <div style={{marginTop: ".75rem"}} className="ui secondary pointing menu">
                 <NavLink className="blue item" to="/" exact activeClassName="active">Home</NavLink>
                 <NavLink className="blue item" to="/add" activeClassName="active">Add Poll</NavLink>
                 <NavLink className="blue item" to="/leaderboard" activeClassName="active">Leaderboard</NavLink>
