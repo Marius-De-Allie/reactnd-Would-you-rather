@@ -23,7 +23,7 @@ class Homepage extends Component {
         const homepage = this.props.authedUser !== null ? 
         (
             <React.Fragment>
-                <button className="questions-btn" to="/" onClick={this.onUnansweredClick}>
+                <button className="ui button" to="/" onClick={this.onUnansweredClick}>
                     Un-answered Questions
                 </button>
                 <button className="questions-btn" to="/" onClick={this.onAnsweredClick}>
