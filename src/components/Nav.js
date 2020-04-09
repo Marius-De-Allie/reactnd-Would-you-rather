@@ -37,7 +37,7 @@ const Nav = props => {
                 <NavLink className="blue item" to="/add" activeClassName="active">Add Poll</NavLink>
                 <NavLink className="blue item" to="/leaderboard" activeClassName="active">Leaderboard</NavLink>
             </div>
-            <div className="user-auth">
+            <div className="right menu">
                 {renderLogin()}
             </div>
         </div>
