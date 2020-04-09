@@ -12,9 +12,9 @@ const UnansweredList = (props) => {
             <div className="ui segment">
                 <div className="ui very relaxed divided items">
                     {unAnsweredIds.map(id => (
-                        <li key={id}>
+                        <React.Fragment key={id}>
                             <QuestionItem id={id}/>
-                        </li>
+                        </React.Fragment>
                     ))}
                 </div>
             </div>
