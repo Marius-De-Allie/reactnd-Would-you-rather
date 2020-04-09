@@ -93,7 +93,7 @@ class AddPoll extends React.Component {
 
      render() {
          return (
-             <div>
+             <div style={{marginTop: "2rem"}} className="ui container">
                 {this.renderUI()}
              </div>
          );
