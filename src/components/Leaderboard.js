@@ -23,7 +23,7 @@ const Leaderboard = props => {
     );
 
     return (
-        <div className="leaderboard">
+        <div style={{marginTop: "2rem"}}className="leaderboard">
             {ui}
         </div>
     );
