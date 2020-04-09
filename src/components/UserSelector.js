@@ -15,7 +15,8 @@ const UserSelector = (props) => {
             <div className="ui item">
                 <label htmlFor="user-select">Login</label>
             </div>
-            <select 
+            <select
+                className="ui selection dropdown" 
                 defaultValue="" 
                 name="users" 
                 id="user-select"
