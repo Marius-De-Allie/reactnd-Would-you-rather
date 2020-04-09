@@ -29,14 +29,16 @@ const AnsPollItem = (props) => {
                         <div className="content">
                             <h3>Would you Rather</h3>
                             <div className="description">
-                                <p>{questions[pollid].optionOne.text} {questions[pollid].optionOne.votes.includes(users[authedUser]) && <span> your selection</span>}</p>
+                                <p>{questions[pollid].optionOne.text} {questions[pollid].optionOne.votes.includes(authedUser) && <span> your selection</span>}</p>
+                                
                             </div>
                             <div style={{marginTop: ".5rem", marginBottom: "1rem"}} class="ui right floated blue label">
                                 <p style={{textAlign: "right"}}>{questions[pollid].optionOne.votes.length} {optionOneVotes !== 1 ? 'votes ' : 'vote '}  |
                                 {` ${Math.round(optionOneVotes / totalVotes * 100)} %`}</p>
                             </div>
                             <div className="description">
-                                <p>{questions[pollid].optionTwo.text} {questions[pollid].optionTwo.votes.includes(users[authedUser]) && <span> your selection</span>}</p>
+                                <p>{questions[pollid].optionTwo.text} {questions[pollid].optionTwo.votes.includes(authedUser) && <span> your selection</span>}</p>
+                                
                             </div>
                             <div style={{marginTop: ".5rem", marginBottom: "1rem"}} className="ui right floated blue label">
                                 <p style={{textAlign: "right"}}>{questions[pollid].optionTwo.votes.length} {optionTwoVotes !== 1 ? 'votes ' : 'vote '}  | 
