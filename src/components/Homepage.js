@@ -26,7 +26,7 @@ class Homepage extends Component {
                 <button className="ui button" to="/" onClick={this.onUnansweredClick}>
                     Un-answered Questions
                 </button>
-                <button className="questions-btn" to="/" onClick={this.onAnsweredClick}>
+                <button className="ui blue button" to="/" onClick={this.onAnsweredClick}>
                     Answered Questions
                 </button>
                 {this.state.showAnswered ? <AnsweredList /> : <UnansweredList />}
