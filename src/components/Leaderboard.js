@@ -7,16 +7,18 @@ const Leaderboard = props => {
     (
         <React.Fragment>
             <h1 className="header-text">Leaderboard</h1>
-            <table className="ui blue celled padded table">
-                <thead>
-                    <tr>
-                        <th><h3>UserName</h3></th>
-                        <th><h3>Answered</h3></th>
-                        <th><h3>Asked</h3></th>
-                    </tr>
-                </thead>
-                {props.userIds.map(id => <LeaderboardItem key={id} id={id} />)}
-            </table>
+            <div className="ui container">
+                <table className="ui blue celled padded table">
+                    <thead>
+                        <tr>
+                            <th><h3>UserName</h3></th>
+                            <th><h3>Answered</h3></th>
+                            <th><h3>Asked</h3></th>
+                        </tr>
+                    </thead>
+                    {props.userIds.map(id => <LeaderboardItem key={id} id={id} />)}
+                </table>
+            </div>
         </React.Fragment>
     );
 
