@@ -14,3 +14,9 @@ div.ui.centered.card div.content h2 {
     font-size: 1.429rem;
     text-align: center;
 }
+
+/* form radio inputs text styling */
+div.ui.centered.card div.content div.description div.grouped.fields div.field {
+    text-align: left;
+}
+
