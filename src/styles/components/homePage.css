@@ -2,3 +2,9 @@
 div.ui.container {
     margin-top: 3.5rem;
 }
+
+/* Homepage - Answered and Unanswered Nav buttons flex conmtainer styling */
+div#buttons-container {
+    display: flex;
+    justify-content: flex-end;
+}
