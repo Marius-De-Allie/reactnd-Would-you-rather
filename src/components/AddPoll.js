@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { handleAddQuestion } from '../actions/shared';
+// Import addPoll stylesheet.
+import '../styles/components/addPoll.css';
 
 class AddPoll extends React.Component {
     // component based state to hold poll option text values.
