@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import NotfoundPage from './NotfoundPage';
+import '../styles/components/ansPollItem.css';
 
 const AnsPollItem = (props) => {
     const renderUI = () => {
