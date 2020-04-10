@@ -47,9 +47,11 @@ const AnsPollItem = (props) => {
                                 <p>{questions[pollid].optionTwo.text} </p>
                                 
                             </div>
-                            <div style={{marginTop: ".5rem", marginBottom: "1rem"}} className="ui blue label">
-                                <p style={{textAlign: "right"}}>{questions[pollid].optionTwo.votes.length} {optionTwoVotes !== 1 ? 'votes ' : 'vote '}  | 
-                                {` ${Math.round(optionTwoVotes / totalVotes * 100)} %`}</p>
+                            <div className="label-container">
+                                <div style={{marginTop: ".5rem", marginBottom: "1rem"}} className="ui blue label">
+                                    <p style={{textAlign: "right"}}>{questions[pollid].optionTwo.votes.length} {optionTwoVotes !== 1 ? 'votes ' : 'vote '}  | 
+                                    {` ${Math.round(optionTwoVotes / totalVotes * 100)} %`}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
