@@ -1,3 +1,9 @@
+/* NAV MENU TOP MARGIN */
 div.ui.container div.ui.secondary.pointing.menu {
     margin-top: 1.25rem;
+}
+
+/* Nav menu - Logout button margin left*/
+div.user-info button.ui.tiny.button {
+    margin-left: 1rem;
 }
