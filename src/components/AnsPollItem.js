@@ -18,7 +18,7 @@ const AnsPollItem = (props) => {
         } else {
             return (
                 <React.Fragment>
-                    <h3 className="ui header">Poll Results</h3>
+                    <h1 className="ui header">Poll Results</h1>
                     <div className="ui centered card">
                         <div className="content">
                             <img 
