@@ -37,7 +37,7 @@ const UnaPollItem = (props) => {
                 {props.users[props.questions[props.pollid].author].name} asks:
             </div>
             <div className="content">
-                <h3>Would you Rather</h3>
+                <h2 className="ui header">Would you Rather</h2>
                 <div className="description">
                     <form className="ui form" onSubmit={onFormSubmit}>
                         <div className="grouped fields">
