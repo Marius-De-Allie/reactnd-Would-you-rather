@@ -1,3 +1,9 @@
 div.ui.centered.card div.content div.description {
     text-align: center;
 }
+
+/* Label container styling */
+div.ui.centered.card div.content div.label-container {
+    display: flex;
+    justify-content: center;
+}
