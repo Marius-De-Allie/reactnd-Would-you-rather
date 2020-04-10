@@ -1,3 +1,8 @@
+/* Poll results header styling */
+div.ui.container h1.ui.header#results-header {
+    margin-bottom: 3rem;
+}
+
 div.ui.centered.card div.content div.description {
     text-align: center;
 }
