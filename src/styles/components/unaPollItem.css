@@ -9,3 +9,8 @@ div.ui.centered.card div.content#avatar {
     text-transform: uppercase;
     font-weight: 400;
 }
+
+div.ui.centered.card div.content h2 {
+    font-size: 1.429rem;
+    text-align: center;
+}
