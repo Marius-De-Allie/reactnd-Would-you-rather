@@ -1,0 +1,5 @@
+/* Add poll would you rather text styling */
+div.ui.container div.ui.segment h2.ui.header {
+    font-size: 1.429rem;
+    text-align: center;
+}
