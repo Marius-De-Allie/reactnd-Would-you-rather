@@ -8,6 +8,11 @@ div.user-info button.ui.tiny.button {
     margin-left: 1rem;
 }
 
+div.user-info button.ui.tiny.button:hover {
+    color: white;
+    background-color: #D01919;
+}
+
 div.user-info span {
     color: #0E6EB8;
     font-weight: bold;
