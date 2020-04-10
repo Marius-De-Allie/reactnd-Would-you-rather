@@ -79,10 +79,12 @@ class AddPoll extends React.Component {
                                         onChange={this.onInputTwoChange}
                                     />
                                 </div>
-                                <button className="ui blue button" type="submit" disabled={optionOne === '' || optionTwo === ''}>Submit</button>
-                                {optionOne !== '' && optionTwo !== '' ? undefined : <p style={{color: 'red'}}>
-                                Please fill in both fields before submitting.
-                                </p>}
+                                <div className="addpoll-btn-container">
+                                    {optionOne !== '' && optionTwo !== '' ? <p></p> : <p style={{color: 'red'}}>
+                                    Please fill in both fields before submitting.
+                                    </p>}
+                                    <button className="ui blue button" type="submit" disabled={optionOne === '' || optionTwo === ''}>Submit</button>
+                                </div>
                             </form>
                         </div>
                     </div>
