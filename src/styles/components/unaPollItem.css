@@ -1,0 +1,4 @@
+/* user avatar image styling */
+div.ui.centered.card div.content img.ui.avatar {
+    margin-right: .5rem;
+}
