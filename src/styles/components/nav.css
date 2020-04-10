@@ -14,3 +14,7 @@ div.user-info span {
     margin-left: 0.25rem;
 }
 
+/* ---UserSelector element styling--- */
+div.right.menu select.ui.selection.dropdown {
+    padding: 0 1rem;
+}
