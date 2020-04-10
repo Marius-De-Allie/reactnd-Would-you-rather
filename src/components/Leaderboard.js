@@ -7,7 +7,6 @@ const Leaderboard = props => {
     (
         <React.Fragment>
             <h1 className="header-text">Leaderboard</h1>
-            <div className="ui container">
                 <table className="ui blue celled padded table">
                     <thead>
                         <tr>
@@ -18,12 +17,11 @@ const Leaderboard = props => {
                     </thead>
                     {props.userIds.map(id => <LeaderboardItem key={id} id={id} />)}
                 </table>
-            </div>
         </React.Fragment>
     );
 
     return (
-        <div style={{marginTop: "2rem"}}className="leaderboard">
+        <div className="ui container">
             {ui}
         </div>
     );

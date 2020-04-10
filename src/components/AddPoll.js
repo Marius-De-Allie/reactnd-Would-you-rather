@@ -81,7 +81,7 @@ class AddPoll extends React.Component {
                                         onChange={this.onInputTwoChange}
                                     />
                                 </div>
-                                <div className="addpoll-btn-container">
+                                <div style={{display: "flex", justifyContent: "space-between"}} className="addpoll-btn-container">
                                     {optionOne !== '' && optionTwo !== '' ? <p></p> : <p style={{color: 'red'}}>
                                     Please fill in both fields before submitting.
                                     </p>}
@@ -99,7 +99,7 @@ class AddPoll extends React.Component {
 
      render() {
          return (
-             <div style={{marginTop: "2rem"}} className="ui container">
+             <div className="ui container">
                 {this.renderUI()}
              </div>
          );
