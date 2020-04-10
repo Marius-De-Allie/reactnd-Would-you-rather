@@ -4,7 +4,13 @@ div.middle.aligned.item div.extra .ui.right.floated.button:hover {
     background-color: #1678C2;
 }
 
+/* QuestionItem h4 header styling */
+div.middle.aligned.item div.content h4.ui.header {
+    text-transform: uppercase;
+    font-weight: 500;
+}
 
+/* QuestionItem h2 header styling */
 div.middle.aligned.item div.content h2.ui.header {
     margin-top: .25rem;
     font-size: 1.43rem;
