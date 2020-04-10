@@ -12,3 +12,9 @@ div.ui.centered.card div.content div.label-container {
     display: flex;
     justify-content: center;
 }
+
+/*  Votes label margin styling */
+div.ui.centered.card div.content div.label-container div.ui.blue.label {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}

@@ -35,7 +35,7 @@ const AnsPollItem = (props) => {
                                 
                             </div>
                             <div className="label-container">
-                                <div style={{marginTop: ".5rem", marginBottom: "1rem"}} class="ui blue label">
+                                <div class="ui blue label">
                                     <p style={{textAlign: "right"}}>{questions[pollid].optionOne.votes.length} {optionOneVotes !== 1 ? 'votes ' : 'vote '}  |
                                     {` ${Math.round(optionOneVotes / totalVotes * 100)} %`}</p>
                                 </div>
@@ -48,7 +48,7 @@ const AnsPollItem = (props) => {
                                 
                             </div>
                             <div className="label-container">
-                                <div style={{marginTop: ".5rem", marginBottom: "1rem"}} className="ui blue label">
+                                <div className="ui blue label">
                                     <p style={{textAlign: "right"}}>{questions[pollid].optionTwo.votes.length} {optionTwoVotes !== 1 ? 'votes ' : 'vote '}  | 
                                     {` ${Math.round(optionTwoVotes / totalVotes * 100)} %`}</p>
                                 </div>
