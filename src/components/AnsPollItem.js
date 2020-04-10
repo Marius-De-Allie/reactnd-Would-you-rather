@@ -20,7 +20,7 @@ const AnsPollItem = (props) => {
                 <React.Fragment>
                     <h1 className="ui header">Poll Results</h1>
                     <div className="ui centered card">
-                        <div className="content">
+                        <div className="content" id="avatar">
                             <img 
                                 className="ui avatar image" 
                                 src={props.users[props.questions[props.pollid].author].avatarURL} 
