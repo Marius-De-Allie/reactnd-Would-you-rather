@@ -28,7 +28,7 @@ const AnsPollItem = (props) => {
                             {users[questions[pollid].author].name} asked:
                         </div>
                         <div className="content">
-                            <h3>Would you Rather</h3>
+                            <h2 className="ui header">Would you Rather</h2>
                             <div className="description">
                                 {questions[pollid].optionOne.votes.includes(authedUser) && <div className="ui pointing below red basic label">Your selection</div>}
                                 <p>{questions[pollid].optionOne.text} </p>
