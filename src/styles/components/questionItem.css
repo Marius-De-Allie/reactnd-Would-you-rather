@@ -3,3 +3,9 @@ div.middle.aligned.item div.extra .ui.right.floated.button:hover {
     color: #fff;
     background-color: #1678C2;
 }
+
+
+div.middle.aligned.item div.content h2.ui.header {
+    margin-top: .25rem;
+    font-size: 1.43rem;
+}
