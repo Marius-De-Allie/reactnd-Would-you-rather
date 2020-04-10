@@ -7,3 +7,10 @@ div.ui.container div.ui.secondary.pointing.menu {
 div.user-info button.ui.tiny.button {
     margin-left: 1rem;
 }
+
+div.user-info span {
+    color: #0E6EB8;
+    font-weight: bold;
+    margin-left: 0.25rem;
+}
+
