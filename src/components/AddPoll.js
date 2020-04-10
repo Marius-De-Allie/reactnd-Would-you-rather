@@ -56,7 +56,7 @@ class AddPoll extends React.Component {
                 <React.Fragment>
                     <h1 className="header">Add Poll</h1>
                     <div className="ui segment">
-                        <h4>Would you Rather</h4>
+                        <h2 className="ui header">Would you Rather</h2>
                         <div>
                             <form className="ui form" onSubmit={this.onFormSubmit}>
                                 <div className="field">
@@ -93,7 +93,7 @@ class AddPoll extends React.Component {
                 </React.Fragment>
             );
         } else {
-            return <h3>Please login at the top right to continue to the homepage</h3>
+            return <h3>Please login at the top right to continue</h3>
         }
     };
 
