@@ -2,3 +2,10 @@
 div.ui.centered.card div.content img.ui.avatar {
     margin-right: .5rem;
 }
+
+/* Username font styling */
+div.ui.centered.card div.content#avatar {
+    font-size: 1.071rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
