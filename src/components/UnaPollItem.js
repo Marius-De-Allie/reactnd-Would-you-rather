@@ -4,6 +4,7 @@ import NotfoundPage from './NotfoundPage';
 import { addAnswer } from '../actions/users';
 import { addVote } from '../actions/questions';
 import { _saveQuestionAnswer } from '../_DATA';
+import '../styles/components/unaPollItem.css';
 
 const UnaPollItem = (props) => {
     const onFormSubmit = (evt) => {
