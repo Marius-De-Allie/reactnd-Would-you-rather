@@ -3,6 +3,8 @@ import { NavLink, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import UserSelector from './UserSelector';
 import { setAuthedUser } from '../actions/authedUser';
+// Import component stylesheet.
+import '../styles/components/nav.css';
 
 const Nav = props => {
     console.log(props);
