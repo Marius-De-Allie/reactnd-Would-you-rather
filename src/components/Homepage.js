@@ -59,7 +59,3 @@ const mapStateToProps = ({authedUser}) => ({
 // Turn Homepage into a container component connecting it to the redux store via connect().
 export default connect(mapStateToProps)(Homepage);
 
-// div#buttons-container {
-//     display: flex;
-//     justify-content: flex-end;
-// }

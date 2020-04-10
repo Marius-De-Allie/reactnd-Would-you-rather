@@ -8,3 +8,9 @@ div#buttons-container {
     display: flex;
     justify-content: flex-end;
 }
+
+/* ---Answered and UnanswerList styling--- */
+/* Header */
+div.ui.container h1 {
+    text-align: center
+}
