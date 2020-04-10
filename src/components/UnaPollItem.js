@@ -32,7 +32,7 @@ const UnaPollItem = (props) => {
     return (
         props.questions[props.pollid] === undefined ? <NotfoundPage /> :
         <div className="ui centered card">
-            <div className="content">
+            <div className="content" id="avatar">
                 <img className="ui avatar" src={props.users[props.questions[props.pollid].author].avatarURL} />
                 {props.users[props.questions[props.pollid].author].name} asks:
             </div>
