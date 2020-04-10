@@ -24,13 +24,15 @@ class Homepage extends Component {
         const homepage = this.props.authedUser !== null ? 
         (
             <React.Fragment>
-                {this.state.showAnswered ? <button className="ui button" to="/" onClick={this.onUnansweredClick}>
+                <div id="buttons-container">
+                    {this.state.showAnswered ? <button className="ui button" to="/" onClick={this.onUnansweredClick}>
                     Click here to view Un-answered Questions
                     </button> :
                     <button className="ui blue button" to="/" onClick={this.onAnsweredClick}>
                         Answered Questions
                     </button>
-                }
+                    }
+                </div>
                 {this.state.showAnswered ? <AnsweredList /> : <UnansweredList />}
             </React.Fragment> 
         ) : 
@@ -57,3 +59,7 @@ const mapStateToProps = ({authedUser}) => ({
 // Turn Homepage into a container component connecting it to the redux store via connect().
 export default connect(mapStateToProps)(Homepage);
 
+// div#buttons-container {
+//     display: flex;
+//     justify-content: flex-end;
+// }
