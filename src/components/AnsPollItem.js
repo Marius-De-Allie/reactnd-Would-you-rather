@@ -29,18 +29,22 @@ const AnsPollItem = (props) => {
                         <div className="content">
                             <h3>Would you Rather</h3>
                             <div className="description">
-                                <p>{questions[pollid].optionOne.text} {questions[pollid].optionOne.votes.includes(authedUser) && <span> your selection</span>}</p>
+                                {questions[pollid].optionOne.votes.includes(authedUser) && <div className="ui pointing below red basic label">Your selection</div>}
+                                <p>{questions[pollid].optionOne.text} </p>
                                 
                             </div>
-                            <div style={{marginTop: ".5rem", marginBottom: "1rem"}} class="ui right floated blue label">
+                            <div style={{marginTop: ".5rem", marginBottom: "1rem"}} class="ui blue label">
                                 <p style={{textAlign: "right"}}>{questions[pollid].optionOne.votes.length} {optionOneVotes !== 1 ? 'votes ' : 'vote '}  |
                                 {` ${Math.round(optionOneVotes / totalVotes * 100)} %`}</p>
                             </div>
+                        </div>
+                        <div className="content">
                             <div className="description">
-                                <p>{questions[pollid].optionTwo.text} {questions[pollid].optionTwo.votes.includes(authedUser) && <span> your selection</span>}</p>
+                                {questions[pollid].optionTwo.votes.includes(authedUser) && <div className="ui pointing below red basic label"> your selection</div>}
+                                <p>{questions[pollid].optionTwo.text} </p>
                                 
                             </div>
-                            <div style={{marginTop: ".5rem", marginBottom: "1rem"}} className="ui right floated blue label">
+                            <div style={{marginTop: ".5rem", marginBottom: "1rem"}} className="ui blue label">
                                 <p style={{textAlign: "right"}}>{questions[pollid].optionTwo.votes.length} {optionTwoVotes !== 1 ? 'votes ' : 'vote '}  | 
                                 {` ${Math.round(optionTwoVotes / totalVotes * 100)} %`}</p>
                             </div>
@@ -51,7 +55,7 @@ const AnsPollItem = (props) => {
         }
     };
     return (
-        <div style={{marginTop: "2rem"}}>
+        <div className="ui container" style={{marginTop: "2rem"}}>
             {renderUI()}
         </div>
     );
