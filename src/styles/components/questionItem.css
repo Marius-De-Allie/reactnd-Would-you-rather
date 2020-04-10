@@ -1,0 +1,5 @@
+/* View poll button, hover styling */
+div.middle.aligned.item div.extra .ui.right.floated.button:hover {
+    color: #fff;
+    background-color: #1678C2;
+}
