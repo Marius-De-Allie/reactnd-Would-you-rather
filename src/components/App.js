@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Switch, Route } from 'react-router-dom';
 import '../styles/base/App.css';
+import getInitialData from  '../actions/shared';
 import { setAuthedUser } from '../actions/authedUser';
 import Homepage from './Homepage';
 // Import 404 page component.
