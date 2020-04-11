@@ -23,7 +23,7 @@ const AnsPollItem = (props) => {
                         <div className="content" id="avatar">
                             <img 
                                 className="ui avatar image" 
-                                src={props.users[props.questions[props.pollid].author].avatarURL} 
+                                src={'/' + props.users[props.questions[props.pollid].author].avatarURL} 
                             />
                             {users[questions[pollid].author].name} asked:
                         </div>
