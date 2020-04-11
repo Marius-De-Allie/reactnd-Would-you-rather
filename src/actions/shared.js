@@ -1,6 +1,6 @@
 import {_saveQuestionAnswer, _saveQuestion } from '../_DATA';
-import { addQuestion } from './questions';
-import { addQuestionUser } from './users';
+import { receiveQuestions, addQuestion } from './questions';
+import { receiveUsers, addQuestionUser } from './users';
 
 const handleAnswerQuestion = (authedUser, qid, answer) => {
     return (dispatch) => {
