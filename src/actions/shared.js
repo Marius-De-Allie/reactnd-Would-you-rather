@@ -2,6 +2,25 @@ import { _getUsers, _getQuestions, _saveQuestionAnswer, _saveQuestion } from '..
 import { receiveQuestions, addQuestion } from './questions';
 import { receiveUsers, addQuestionUser } from './users';
 
+// Thunk action creator for loading initial data.
+const getInitialData = () => {
+    return (dispatch) => {
+        // Call async API functions to retrive users and questions from database.
+        return Promise.all([
+            _getUsers(),
+            _getQuestions(),
+        ])
+        // Dispatch receiveUsers and receiveQuestions actions with response from API functions.
+        .then(({users, questions}) => {
+            dispatch(receiveUsers(users));
+            dispatch(receiveQuestions(questions));
+        })
+        .catch(e => {
+            console.log('Unable to load initial user and question data.', e);
+        })
+    }
+};
+
 const handleAnswerQuestion = (authedUser, qid, answer) => {
     return (dispatch) => {
         return _saveQuestionAnswer(authedUser, qid, answer)
