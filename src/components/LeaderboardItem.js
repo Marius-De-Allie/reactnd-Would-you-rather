@@ -7,7 +7,7 @@ const LeaderboardItem = props => {
             <tr>
                 <td>
                     <h4 className="ui image header">
-                        <img className="ui avatar image" src={props.users[props.id].avatarURL} />
+                        <img className="ui avatar image" src={'/' + props.users[props.id].avatarURL} />
                         <div className="content">
                             {props.users[props.id].name}
                         </div>
