@@ -14,7 +14,7 @@ import AddPoll from './AddPoll';
 
 class App extends React.Component {
   componentDidMount() {
-    
+    this.props.dispatch(getInitialData());
     // this.props.dispatch(setAuthedUser('sarahedo'));
   }
   render() {
