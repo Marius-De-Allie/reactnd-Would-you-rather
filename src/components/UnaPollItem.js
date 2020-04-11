@@ -5,10 +5,6 @@ import { addAnswer } from '../actions/users';
 import { addVote } from '../actions/questions';
 import { _saveQuestionAnswer } from '../_DATA';
 import '../styles/components/unaPollItem.css';
-// Import avatar images.
-import avatarOne from '../../public/images/avatar-1.jpg';
-import avatarTwo from '../../public/images/avatar-2.jpg';
-import avatarThree from '../../public/images/avatar-3.jpg';
 
 const UnaPollItem = (props) => {
     const onFormSubmit = (evt) => {
