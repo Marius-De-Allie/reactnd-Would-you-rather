@@ -35,7 +35,7 @@ const AnsPollItem = (props) => {
                                 
                             </div>
                             <div className="label-container">
-                                <div class="ui blue label">
+                                <div className="ui blue label">
                                     <p>{questions[pollid].optionOne.votes.length} {optionOneVotes !== 1 ? 'votes ' : 'vote '}  |
                                     {` ${Math.round(optionOneVotes / totalVotes * 100)} %`}</p>
                                 </div>
