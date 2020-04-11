@@ -23,7 +23,7 @@ const Nav = props => {
             return (
                 <React.Fragment>
                     <div className="user-info">
-                        <img className="ui avatar image" src={props.users[props.authedUser].avatarURL} />
+                        <img className="ui avatar image" src={'/' + props.users[props.authedUser].avatarURL} />
                         <span>{props.users[props.authedUser].name}</span>
                         <button className="ui tiny button" onClick={onLogoutClick}>Logout</button>
                     </div>
