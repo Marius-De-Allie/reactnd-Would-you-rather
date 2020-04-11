@@ -43,4 +43,4 @@ const handleAddQuestion = (questionObj) => {
     }
 };
 
-export {getInitialData, handleAddQuestion};
+export {getInitialData as default, handleAddQuestion};
