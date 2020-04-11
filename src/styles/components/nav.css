@@ -1,4 +1,7 @@
 /* NAV MENU TOP MARGIN */
+div.ui.container#nav-container {
+    margin-top: 0;
+}
 div.ui.container div.ui.secondary.pointing.menu {
     margin-top: 1.25rem;
 }
