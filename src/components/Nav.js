@@ -33,7 +33,7 @@ const Nav = props => {
     };
 
     return (
-        <div className="ui container">
+        <div className="ui container" id="nav-container">
             <div className="ui secondary pointing menu">
                 <NavLink className="blue item" to="/" exact activeClassName="active">Home</NavLink>
                 <NavLink className="blue item" to="/add" activeClassName="active">Add Poll</NavLink>
