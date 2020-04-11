@@ -31,5 +31,9 @@ const UserSelector = (props) => {
     );
 };
 
+const mapStateToProps = ({users}) => ({
+    users
+});
+
 export default connect()(UserSelector);
 
