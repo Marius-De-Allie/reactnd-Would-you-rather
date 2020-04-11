@@ -14,6 +14,7 @@ import AddPoll from './AddPoll';
 
 class App extends React.Component {
   componentDidMount() {
+    // Load intial data into redux store.
     this.props.dispatch(getInitialData());
     // this.props.dispatch(setAuthedUser('sarahedo'));
   }
