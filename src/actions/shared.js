@@ -11,7 +11,7 @@ const getInitialData = () => {
             _getQuestions(),
         ])
         // Dispatch receiveUsers and receiveQuestions actions with response from API functions.
-        .then(({users, questions}) => {
+        .then(([users, questions]) => {
             dispatch(receiveUsers(users));
             dispatch(receiveQuestions(questions));
         })
