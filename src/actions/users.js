@@ -34,5 +34,5 @@ const addQuestionUser = (question) => ({
     question
 });
 
-export {RECEIVE_USERS, ADD_ANSWER, ADD_QUESTION_USER, handleReceiveUsers, addAnswer, addQuestionUser};
+export {RECEIVE_USERS, ADD_ANSWER, ADD_QUESTION_USER, receiveUsers, handleReceiveUsers, addAnswer, addQuestionUser};
 
