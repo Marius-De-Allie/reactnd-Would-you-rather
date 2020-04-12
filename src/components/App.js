@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { Switch, Route } from 'react-router-dom';
 import '../styles/base/App.css';
 import getInitialData from  '../actions/shared';
-import { setAuthedUser } from '../actions/authedUser';
 import Homepage from './Homepage';
 // Import 404 page component.
 import NotfoundPage from './NotfoundPage';
@@ -16,7 +15,6 @@ class App extends React.Component {
   componentDidMount() {
     // Load intial data into redux store.
     this.props.dispatch(getInitialData());
-    // this.props.dispatch(setAuthedUser('sarahedo'));
   }
   render() {
     return (
