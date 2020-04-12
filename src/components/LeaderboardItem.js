@@ -26,13 +26,3 @@ const mapStateToProp = ({users}, {id}) => ({
 });
 
 export default connect(mapStateToProp)(LeaderboardItem);
-
-// <td>
-//         <h4 class="ui image header">
-//           <img src="/images/avatar2/small/lena.png" class="ui mini rounded image">
-//           <div class="content">
-//             Lena
-//             <div class="sub header">Human Resources
-//           </div>
-//         </div>
-//       </h4></td>

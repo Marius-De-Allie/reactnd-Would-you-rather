@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { setAuthedUser } from '../actions/authedUser';
 
 const UserSelector = (props) => {
-    
     const onChangeHandler = evt => {
         const value = evt.target.value;
         // dispatch action creator to set authedUser state in redux store to currently select user.

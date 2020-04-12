@@ -44,7 +44,6 @@ class AddPoll extends React.Component {
             this.props.dispatch(handleAddQuestion(question));
             // Redirect to homepage.
             this.props.history.push('/');
-            console.log('New poll submitted.');
         }
     };
     

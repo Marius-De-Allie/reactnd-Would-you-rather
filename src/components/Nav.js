@@ -7,8 +7,6 @@ import { setAuthedUser } from '../actions/authedUser';
 import '../styles/components/nav.css';
 
 const Nav = props => {
-    console.log(props);
-
     const onLogoutClick = () => {
         // Dispatch action creator to set authedUser redux store state to value of null.
         props.dispatch(setAuthedUser(null));
