@@ -10,7 +10,7 @@ const QuestionItem = (props) => {
             <img 
                 className="ui avatar image" 
                 src={props.users[props.questions[props.id].author].avatarURL}
-                alt={`${props.users[props.questions[props.id].author].name}'s avatar image`}
+                alt={`${props.users[props.questions[props.id].author].name}'s avatar`}
             />
             <div className="content">
                 <h4 className="ui header">{props.users[props.questions[props.id].author].name} asked:</h4>
