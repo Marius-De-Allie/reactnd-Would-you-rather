@@ -60,7 +60,7 @@ const AnsPollItem = (props) => {
         }
     };
     return (
-        <div className="ui container" style={{marginTop: "2rem"}}>
+        <div className="ui container">
             {renderUI()}
         </div>
     );
