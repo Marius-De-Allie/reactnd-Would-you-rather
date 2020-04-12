@@ -30,5 +30,10 @@ const UserSelector = (props) => {
     );
 };
 
+// Declare MapDispatchToProps object for setAuthedUser action creator.
+const mapDispatchToProps = {
+    setAuthedUser
+};
+
 export default connect()(UserSelector);
 
