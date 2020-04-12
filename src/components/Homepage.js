@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { NavLink } from 'react-router-dom';
 import UnansweredList from './UnansweredList';
 import AnsweredList from './AnsweredList';
 import '../styles/components/homePage.css';
