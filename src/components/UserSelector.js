@@ -6,7 +6,7 @@ const UserSelector = ({setAuthedUser}) => {
     const onChangeHandler = evt => {
         const value = evt.target.value;
         // dispatch action creator to set authedUser state in redux store to currently selected user.
-        props.dispatch(setAuthedUser(value));
+        setAuthedUser(value);
     };
     
     return (
