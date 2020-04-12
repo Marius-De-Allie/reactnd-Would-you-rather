@@ -10,15 +10,23 @@ const AnsweredList = (props) => {
     return (
         <React.Fragment>
             <h1>Answered Questions</h1>
-            <div className="ui segment">
-                <div className="ui very relaxed divided items">
-                    {answerIds.map(id => (
-                        <React.Fragment key={id}>
-                            <QuestionsItem id={id}/>
-                        </React.Fragment>
-                    ))}
+            {answerIds.length > 0 ? (
+                <div className="ui segment">
+                    <div className="ui very relaxed divided items">
+                        {answerIds.map(id => (
+                            <React.Fragment key={id}>
+                                <QuestionsItem id={id}/>
+                            </React.Fragment>
+                        ))}
+                    </div>
                 </div>
-            </div>
+            ) : 
+            (
+                <div className="ui segment">
+                    <h3>{props.users[props.authedUser].name} has no answered questions.</h3>
+                </div>
+            )
+        }
         </React.Fragment>
     )
 };
