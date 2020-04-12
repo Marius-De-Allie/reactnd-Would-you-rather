@@ -35,5 +35,5 @@ const mapDispatchToProps = {
     setAuthedUser
 };
 
-export default connect()(UserSelector);
+export default connect(null, mapDispatchToProps)(UserSelector);
 
