@@ -23,17 +23,9 @@ const handleReceiveQuestions = () => {
     }
 };
 
-// Action creator to add user's ID to vote array of questions piece of redux state.
-const addVote = ({authedUser, qid, answer}) => ({
-    type: ADD_VOTE,
-    authedUser,
-    qid,
-    answer
-});
-
 const addQuestion = (question) => ({
     type: ADD_QUESTION,
     question
 });
 
-export {RECEIVE_QUESTIONS, ADD_VOTE, ADD_QUESTION, receiveQuestions, handleReceiveQuestions, addVote, addQuestion}; 
+export {RECEIVE_QUESTIONS, ADD_VOTE, ADD_QUESTION, receiveQuestions, handleReceiveQuestions, addQuestion}; 
