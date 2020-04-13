@@ -20,14 +20,6 @@ const handleReceiveUsers = () => {
     }
 };
 
-// Action creator to add answer id to users piece of redux store state
-const addAnswer = ({authedUser, qid, answer}) => ({
-    type: ADD_ANSWER,
-    authedUser,
-    qid,
-    answer
-});
-
 // Action creator to add newly added question's id to the questions piece of redux store state.
 const addQuestionUser = (question) => ({
     type:ADD_QUESTION_USER,
