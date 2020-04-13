@@ -1,5 +1,5 @@
 import { RECEIVE_USERS, ADD_ANSWER, ADD_QUESTION_USER } from '../actions/users';
-
+import { ADD_ANSWER } from '../actions/shared';
 
 // Users reducer, has default state of an empty object {}.
 const users = (state = {}, action) => {
