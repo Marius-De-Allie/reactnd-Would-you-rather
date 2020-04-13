@@ -1,4 +1,5 @@
 import { RECEIVE_QUESTIONS, ADD_VOTE, ADD_QUESTION } from '../actions/questions';
+import { ADD_ANSWER } from '../actions/shared';
 
 // Questions reducer, has default state of an empty object {}.
 const questions = (state = {}, action) => {
