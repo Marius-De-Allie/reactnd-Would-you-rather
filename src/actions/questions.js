@@ -2,7 +2,6 @@
 import { _getQuestions } from '../_DATA';
 
 const RECEIVE_QUESTIONS = 'RECEIVE_QUESTIONS';
-const ADD_VOTE = 'ADD_VOTE';
 const ADD_QUESTION = 'ADD_QUESTION';
 
 const receiveQuestions = (questions) => ({
@@ -28,4 +27,4 @@ const addQuestion = (question) => ({
     question
 });
 
-export {RECEIVE_QUESTIONS, ADD_VOTE, ADD_QUESTION, receiveQuestions, handleReceiveQuestions, addQuestion}; 
+export {RECEIVE_QUESTIONS, ADD_QUESTION, receiveQuestions, handleReceiveQuestions, addQuestion}; 
