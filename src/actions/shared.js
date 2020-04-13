@@ -33,9 +33,11 @@ const addAnswer = ({authedUser, qid, answer}) => ({
 });
 
 // Thunk action creator to add poll answer to both users and questions pieces of redux store state and update backend using _saveQuestionAnswer async function.
-const handleAddAnswer = () => {
+const handleAddAnswer = (questionObj) => {
     return (dispatch) => {
-
+        dispatch(addAnswer(questionObj));
+        _saveQuestionAnswer(questionObj)
+        .catch(e => console.log('Unable to add answer to database', e));
     }
 };
 
