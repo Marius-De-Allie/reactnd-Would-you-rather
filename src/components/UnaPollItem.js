@@ -20,6 +20,7 @@ const UnaPollItem = (props) => {
                 answer
             }
             // Dispatch actions to update users and questions state in redux store, as well as backend database when a poll is voted on.
+            props.handleAddAnswer(ansPollObject);
         }
     };
 
