@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import NotfoundPage from './NotfoundPage';
+import { handleAddAnswer } from '../actions/shared';
 import '../styles/components/unaPollItem.css';
 
 const UnaPollItem = (props) => {
