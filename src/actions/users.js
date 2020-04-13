@@ -1,6 +1,5 @@
 import { _getUsers } from '../_DATA';
 const RECEIVE_USERS = 'RECEIVE_USERS';
-const ADD_ANSWER = 'ADD_ANSWER';
 const ADD_QUESTION_USER = 'ADD_QUESTION_USER';
 
 const receiveUsers = (users) => ({
@@ -26,5 +25,5 @@ const addQuestionUser = (question) => ({
     question
 });
 
-export {RECEIVE_USERS, ADD_ANSWER, ADD_QUESTION_USER, receiveUsers, handleReceiveUsers, addAnswer, addQuestionUser};
+export {RECEIVE_USERS, ADD_ANSWER, ADD_QUESTION_USER, receiveUsers, handleReceiveUsers, addQuestionUser};
 
