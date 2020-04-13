@@ -24,6 +24,14 @@ const getInitialData = () => {
     }
 };
 
+// Action creator to add poll answer to both users  and questions pieces of redux store state.
+const addAnswer = ({authedUser, qid, answer}) => ({
+    type: ADD_ANSWER,
+    authedUser,
+    qid,
+    answer
+});
+
 // Thunk action creator for adding question to database asynchronously and to redux store.
 const handleAddQuestion = (questionObj) => {
     return(dispatch) => {
