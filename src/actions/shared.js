@@ -2,6 +2,9 @@ import { _getUsers, _getQuestions, _saveQuestion } from '../_DATA';
 import { receiveQuestions, addQuestion } from './questions';
 import { receiveUsers, addQuestionUser } from './users';
 
+// ADD_ANSWER action type.
+const ADD_ANSWER = 'ADD_ANSWER';
+
 // Thunk action creator for loading initial data.
 const getInitialData = () => {
     return (dispatch) => {
