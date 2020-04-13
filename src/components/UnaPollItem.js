@@ -1,8 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import NotfoundPage from './NotfoundPage';
-import { addAnswer } from '../actions/users';
-import { addVote } from '../actions/questions';
 import { _saveQuestionAnswer } from '../_DATA';
 import '../styles/components/unaPollItem.css';
 
