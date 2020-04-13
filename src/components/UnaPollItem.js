@@ -71,4 +71,4 @@ const mapDispatchToProps = {
     handleAddAnswer  
 };
 
-export default connect(mapStateToProps)(UnaPollItem);
+export default connect(mapStateToProps, mapDispatchToProps)(UnaPollItem);
