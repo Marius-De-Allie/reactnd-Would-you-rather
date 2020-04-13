@@ -67,4 +67,8 @@ const mapStateToProps = ({users, questions, authedUser}, {pollid}) => ({
     pollid
 });
 
+const mapDispatchToProps = {
+    handleAddAnswer  
+};
+
 export default connect(mapStateToProps)(UnaPollItem);
