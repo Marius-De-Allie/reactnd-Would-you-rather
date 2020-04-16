@@ -23,7 +23,7 @@ const UserSelector = ({setAuthedUser}) => {
             >
                 <option disabled value="">--Select a user to login--</option>
                 <option value="janedoe">Jane Doe</option>
-                <option value="tylermcginnis">Tyler McGinnis</option>
+                <option value="carltompkins">Carl Tompkins</option>
                 <option value="johndoe">John Doe</option>
             </select>
         </React.Fragment>
