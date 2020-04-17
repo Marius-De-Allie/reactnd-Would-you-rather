@@ -14,6 +14,7 @@ This is project is a single page web application developed using the React libra
 ## Instructions
 
 ### How to start the Would you Rather React-Redux single page application
+- Application URL [Would You Rather App](https://hardcore-wilson-4028c9.netlify.app/)
 - Application may be downloaded or cloned (git clone https://github.com/Marius-De-Allie/reactnd-Would-you-rather)from [my GitHub repository](https://github.com/Marius-De-Allie/reactnd-Would-you-rather)
 - Once downloaded or cloned via git clone terminal command
 - Run `npm install` via terminal, to download all dependencies for the application.
